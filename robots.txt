@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://filipescu88.github.io/gotowawizytowka-lp/sitemap.xml

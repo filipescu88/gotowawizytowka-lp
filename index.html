@@ -1,0 +1,1302 @@
+<!DOCTYPE html>
+<html lang="pl" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Gotowa Strona-Wizytówka .pl w 5 Minut z WhatsAppa — 399 zł | Warsztat Cyfrowy</title>
+  <meta name="description" content="Zamów profesjonalną stronę internetową z domeną .pl i certyfikatem SSL za 399 zł. Wyślij opis firmy i zdjęcia na WhatsApp lub e-mail, napisz START i odbierz gotową stronę!" />
+  <meta name="robots" content="index, follow" />
+  <link rel="canonical" href="https://filipescu88.github.io/gotowawizytowka-lp/" />
+
+  <!-- Open Graph / Social / Ads Preview -->
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Strona Internetowa dla Firmy w 5 Minut przez WhatsApp — 399 zł" />
+  <meta property="og:description" content="Bez agencji, bez kreatorów, bez czekania tygodniami. Wyślij zdjęcia i opis na WhatsAppie, dopracuj projekt bez limitu poprawek i odbierz stronę pod własną domeną .pl!" />
+  <meta property="og:url" content="https://filipescu88.github.io/gotowawizytowka-lp/" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=JetBrains+Mono:wght@500;600&display=swap" rel="stylesheet" />
+
+  <!-- Schema.org Product + Service + FAQPage for Google Ads Quality Score -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "Product",
+        "name": "Automatyczna Strona-Wizytówka WWW z domeną .pl (WhatsApp & Email CMS)",
+        "description": "Kompletna strona internetowa dla firmy generowana i edytowana przez WhatsApp lub e-mail, z domeną .pl i certyfikatem SSL w cenie.",
+        "brand": {
+          "@type": "Brand",
+          "name": "Warsztat Cyfrowy"
+        },
+        "offers": [
+          {
+            "@type": "Offer",
+            "name": "Strona-Wizytówka Pod Klucz z domeną .pl",
+            "price": "399.00",
+            "priceCurrency": "PLN",
+            "availability": "https://schema.org/InStock",
+            "url": "https://warsztatcyfrowy.pl/#uslugi"
+          },
+          {
+            "@type": "Offer",
+            "name": "Pakiet Opieki WhatsApp/Email CMS 24/7 (opcjonalna subskrypcja)",
+            "price": "29.00",
+            "priceCurrency": "PLN",
+            "availability": "https://schema.org/InStock",
+            "url": "https://warsztatcyfrowy.pl/#uslugi"
+          }
+        ]
+      },
+      {
+        "@type": "FAQPage",
+        "@id": "#faq-schema",
+        "mainEntity": [
+          {
+            "@type": "Question",
+            "name": "Ile razy mogę wprowadzić poprawki do strony w pakiecie za 399 zł?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Nie narzucamy żadnych sztucznych limitów! Na etapie wersji roboczej (przed wyborem docelowej domeny .pl) możesz zgłaszać dowolną liczbę zmian. Dodatkowo po publikacji pod domeną .pl masz jeszcze 48 godzin okna gwarancyjnego na bezpłatne poprawki startowe."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Czy muszę znać się na programowaniu lub kreatorach stron?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Absolutnie nie. Wszystko załatwiasz tak samo, jakbyś pisał wiadomość do znajomego na WhatsAppie lub wysyłał zwykłego maila ze zdjęciami z telefonu."
+            }
+          }
+        ]
+      }
+    ]
+  }
+  </script>
+
+  <style>
+    :root {
+      --bg-dark: #070b14;
+      --bg-card: #0f172a;
+      --bg-card-hover: #131e36;
+      --border: rgba(148, 163, 184, 0.16);
+      --border-accent: rgba(16, 185, 129, 0.45);
+      --text-main: #f8fafc;
+      --text-muted: #94a3b8;
+      --emerald: #10b981;
+      --emerald-dark: #059669;
+      --emerald-glow: rgba(16, 185, 129, 0.22);
+      --cyan: #06b6d4;
+      --amber: #f59e0b;
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+      background-color: var(--bg-dark);
+      color: var(--text-main);
+      line-height: 1.6;
+      overflow-x: hidden;
+      background-image:
+        radial-gradient(circle at 12% 10%, rgba(16, 185, 129, 0.12), transparent 34%),
+        radial-gradient(circle at 88% 18%, rgba(6, 182, 212, 0.10), transparent 36%);
+    }
+
+    .container {
+      width: 100%;
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 0 1.25rem;
+    }
+
+    /* Top Sticky Bar */
+    .topbar {
+      position: sticky;
+      top: 0;
+      z-index: 50;
+      backdrop-filter: blur(16px);
+      background: rgba(7, 11, 20, 0.86);
+      border-bottom: 1px solid var(--border);
+    }
+    .topbar-inner {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      height: 70px;
+      gap: 1rem;
+    }
+    .brand {
+      display: flex;
+      align-items: center;
+      gap: 0.65rem;
+      text-decoration: none;
+      color: var(--text-main);
+      font-weight: 800;
+      font-size: 1.1rem;
+      letter-spacing: -0.02em;
+    }
+    .brand-badge {
+      width: 36px;
+      height: 36px;
+      border-radius: 10px;
+      background: linear-gradient(135deg, var(--emerald), var(--cyan));
+      display: grid;
+      place-items: center;
+      color: #04130e;
+      font-weight: 900;
+      font-size: 1rem;
+      box-shadow: 0 0 20px var(--emerald-glow);
+    }
+    .nav-links {
+      display: flex;
+      align-items: center;
+      gap: 1.5rem;
+    }
+    .nav-links a {
+      color: var(--text-muted);
+      text-decoration: none;
+      font-size: 0.92rem;
+      font-weight: 500;
+      transition: color 0.2s;
+    }
+    .nav-links a:hover {
+      color: var(--text-main);
+    }
+
+    /* Buttons */
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 0.55rem;
+      padding: 0.85rem 1.5rem;
+      border-radius: 12px;
+      font-weight: 700;
+      font-size: 0.98rem;
+      text-decoration: none;
+      transition: all 0.2s ease;
+      cursor: pointer;
+      border: none;
+    }
+    .btn-primary {
+      background: linear-gradient(135deg, var(--emerald), #059669);
+      color: #03150e;
+      box-shadow: 0 10px 28px -6px rgba(16, 185, 129, 0.48);
+    }
+    .btn-primary:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 14px 34px -6px rgba(16, 185, 129, 0.65);
+      filter: brightness(1.05);
+    }
+    .btn-outline {
+      background: rgba(15, 23, 42, 0.75);
+      color: var(--text-main);
+      border: 1px solid var(--border);
+    }
+    .btn-outline:hover {
+      border-color: var(--emerald);
+      background: rgba(16, 185, 129, 0.08);
+    }
+    .btn-sm {
+      padding: 0.6rem 1.1rem;
+      font-size: 0.88rem;
+      border-radius: 10px;
+    }
+
+    /* Hero Section */
+    .hero {
+      padding: 4rem 0 4.5rem;
+    }
+    .hero-grid {
+      display: grid;
+      grid-template-columns: 1.08fr 0.92fr;
+      gap: 3rem;
+      align-items: center;
+    }
+    .pill {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.5rem;
+      padding: 0.4rem 0.9rem;
+      border-radius: 999px;
+      background: rgba(16, 185, 129, 0.12);
+      border: 1px solid var(--border-accent);
+      color: #34d399;
+      font-size: 0.82rem;
+      font-weight: 700;
+      letter-spacing: 0.02em;
+      margin-bottom: 1.25rem;
+    }
+    .pill-dot {
+      width: 8px;
+      height: 8px;
+      border-radius: 50%;
+      background: var(--emerald);
+      box-shadow: 0 0 10px var(--emerald);
+    }
+    .hero h1 {
+      font-size: clamp(2.15rem, 4.2vw, 3.45rem);
+      line-height: 1.12;
+      font-weight: 900;
+      letter-spacing: -0.03em;
+      margin-bottom: 1.25rem;
+    }
+    .gradient-text {
+      background: linear-gradient(90deg, #34d399, #22d3ee);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+    .hero-lead {
+      font-size: 1.12rem;
+      color: var(--text-muted);
+      margin-bottom: 1.75rem;
+      max-width: 580px;
+    }
+    .hero-lead strong {
+      color: var(--text-main);
+    }
+    .hero-ctas {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.9rem;
+      margin-bottom: 2rem;
+    }
+    .hero-trust {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 0.9rem;
+      padding-top: 1.5rem;
+      border-top: 1px solid var(--border);
+    }
+    .trust-item {
+      display: flex;
+      flex-direction: column;
+      gap: 0.15rem;
+    }
+    .trust-val {
+      font-weight: 800;
+      font-size: 1.15rem;
+      color: var(--text-main);
+    }
+    .trust-lbl {
+      font-size: 0.8rem;
+      color: var(--text-muted);
+    }
+
+    /* Interactive Phone + Live Site Mockup */
+    .mockup-wrap {
+      position: relative;
+      background: linear-gradient(160deg, rgba(15, 23, 42, 0.95), rgba(9, 14, 26, 0.95));
+      border: 1px solid var(--border);
+      border-radius: 24px;
+      padding: 1.25rem;
+      box-shadow: 0 25px 60px -15px rgba(0, 0, 0, 0.7), 0 0 40px var(--emerald-glow);
+    }
+    .wa-header {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 0.75rem 1rem;
+      background: #075e54;
+      border-radius: 16px 16px 0 0;
+      color: #fff;
+    }
+    .wa-header-left {
+      display: flex;
+      align-items: center;
+      gap: 0.7rem;
+    }
+    .wa-avatar {
+      width: 36px;
+      height: 36px;
+      border-radius: 50%;
+      background: #10b981;
+      display: grid;
+      place-items: center;
+      font-weight: 800;
+      color: #032217;
+      font-size: 0.9rem;
+    }
+    .wa-title {
+      font-weight: 700;
+      font-size: 0.92rem;
+      line-height: 1.2;
+    }
+    .wa-status {
+      font-size: 0.74rem;
+      color: #a7f3d0;
+    }
+    .wa-chat {
+      background: #0b141a;
+      padding: 1rem;
+      display: flex;
+      flex-direction: column;
+      gap: 0.65rem;
+      border-left: 1px solid rgba(255,255,255,0.06);
+      border-right: 1px solid rgba(255,255,255,0.06);
+    }
+    .msg {
+      max-width: 88%;
+      padding: 0.65rem 0.85rem;
+      border-radius: 12px;
+      font-size: 0.83rem;
+      line-height: 1.42;
+      position: relative;
+    }
+    .msg-user {
+      align-self: flex-end;
+      background: #005c4b;
+      color: #e9edef;
+      border-bottom-right-radius: 3px;
+    }
+    .msg-bot {
+      align-self: flex-start;
+      background: #202c33;
+      color: #e9edef;
+      border-bottom-left-radius: 3px;
+      border: 1px solid rgba(16, 185, 129, 0.28);
+    }
+    .msg-time {
+      display: block;
+      text-align: right;
+      font-size: 0.68rem;
+      color: rgba(255, 255, 255, 0.55);
+      margin-top: 0.25rem;
+    }
+    .photo-chips {
+      display: flex;
+      gap: 0.4rem;
+      margin-top: 0.35rem;
+    }
+    .photo-chip {
+      font-size: 0.72rem;
+      padding: 0.2rem 0.5rem;
+      border-radius: 6px;
+      background: rgba(0, 0, 0, 0.3);
+      color: #a7f3d0;
+      font-family: 'JetBrains Mono', monospace;
+    }
+    .site-preview-bar {
+      margin-top: 0.9rem;
+      background: #0b1120;
+      border: 1px solid var(--border-accent);
+      border-radius: 14px;
+      padding: 0.85rem 1rem;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 0.75rem;
+    }
+    .url-pill {
+      display: flex;
+      align-items: center;
+      gap: 0.45rem;
+      font-family: 'JetBrains Mono', monospace;
+      font-size: 0.8rem;
+      color: #34d399;
+      background: rgba(16, 185, 129, 0.1);
+      padding: 0.35rem 0.7rem;
+      border-radius: 8px;
+    }
+    .lh-badge {
+      font-size: 0.75rem;
+      font-weight: 700;
+      color: #f8fafc;
+      background: rgba(6, 182, 212, 0.18);
+      border: 1px solid rgba(6, 182, 212, 0.4);
+      padding: 0.3rem 0.6rem;
+      border-radius: 8px;
+      white-space: nowrap;
+    }
+
+    /* Section Headers */
+    section {
+      padding: 4.5rem 0;
+    }
+    .section-head {
+      text-align: center;
+      max-width: 740px;
+      margin: 0 auto 3rem;
+    }
+    .section-tag {
+      display: inline-block;
+      color: var(--emerald);
+      font-weight: 700;
+      font-size: 0.82rem;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      margin-bottom: 0.5rem;
+    }
+    .section-head h2 {
+      font-size: clamp(1.75rem, 3.2vw, 2.5rem);
+      font-weight: 800;
+      letter-spacing: -0.02em;
+      margin-bottom: 0.75rem;
+    }
+    .section-head p {
+      color: var(--text-muted);
+      font-size: 1.05rem;
+    }
+
+    /* Infographic / Architecture Diagram Section */
+    .diagram-box {
+      background: var(--bg-card);
+      border: 1px solid var(--border);
+      border-radius: 24px;
+      padding: 2.25rem 1.75rem;
+      margin-bottom: 2.5rem;
+      box-shadow: 0 20px 50px -20px rgba(0, 0, 0, 0.6);
+    }
+    .steps-grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 1.25rem;
+      position: relative;
+    }
+    .step-card {
+      background: rgba(7, 11, 20, 0.65);
+      border: 1px solid var(--border);
+      border-radius: 18px;
+      padding: 1.4rem 1.2rem;
+      position: relative;
+      transition: transform 0.2s, border-color 0.2s;
+    }
+    .step-card:hover {
+      transform: translateY(-4px);
+      border-color: var(--emerald);
+    }
+    .step-num {
+      width: 38px;
+      height: 38px;
+      border-radius: 10px;
+      background: rgba(16, 185, 129, 0.15);
+      border: 1px solid var(--border-accent);
+      color: #34d399;
+      font-weight: 800;
+      display: grid;
+      place-items: center;
+      margin-bottom: 1rem;
+      font-family: 'JetBrains Mono', monospace;
+    }
+    .step-card h3 {
+      font-size: 1.05rem;
+      font-weight: 700;
+      margin-bottom: 0.5rem;
+    }
+    .step-card p {
+      font-size: 0.88rem;
+      color: var(--text-muted);
+    }
+    .step-badge {
+      display: inline-block;
+      margin-top: 0.75rem;
+      font-size: 0.75rem;
+      font-weight: 600;
+      color: #22d3ee;
+      background: rgba(6, 182, 212, 0.12);
+      padding: 0.2rem 0.55rem;
+      border-radius: 6px;
+    }
+
+    /* Interactive Live Simulator */
+    .sim-grid {
+      display: grid;
+      grid-template-columns: 0.95fr 1.05fr;
+      gap: 2rem;
+      align-items: stretch;
+      background: var(--bg-card);
+      border: 1px solid var(--border);
+      border-radius: 24px;
+      padding: 2rem;
+    }
+    .sim-buttons {
+      display: flex;
+      flex-direction: column;
+      gap: 0.85rem;
+    }
+    .sim-btn {
+      text-align: left;
+      background: rgba(7, 11, 20, 0.7);
+      border: 1px solid var(--border);
+      border-radius: 14px;
+      padding: 1rem 1.15rem;
+      color: var(--text-main);
+      cursor: pointer;
+      transition: all 0.2s;
+    }
+    .sim-btn:hover, .sim-btn.active {
+      border-color: var(--emerald);
+      background: rgba(16, 185, 129, 0.1);
+      box-shadow: 0 0 25px rgba(16, 185, 129, 0.14);
+    }
+    .sim-btn-label {
+      display: block;
+      font-size: 0.75rem;
+      color: var(--emerald);
+      font-weight: 700;
+      text-transform: uppercase;
+      margin-bottom: 0.25rem;
+    }
+    .sim-btn-text {
+      font-size: 0.92rem;
+      font-weight: 600;
+    }
+    .sim-screen {
+      background: #070b14;
+      border: 1px solid var(--border-accent);
+      border-radius: 18px;
+      padding: 1.5rem;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }
+    .sim-browser-top {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding-bottom: 0.9rem;
+      margin-bottom: 1.1rem;
+      border-bottom: 1px solid var(--border);
+    }
+    .dots {
+      display: flex;
+      gap: 6px;
+    }
+    .dots span {
+      width: 10px;
+      height: 10px;
+      border-radius: 50%;
+      background: #334155;
+    }
+    .dots span:nth-child(1) { background: #ef4444; }
+    .dots span:nth-child(2) { background: #f59e0b; }
+    .dots span:nth-child(3) { background: #10b981; }
+
+    /* Pricing Cards */
+    .pricing-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 2rem;
+      max-width: 980px;
+      margin: 0 auto;
+    }
+    .price-card {
+      background: var(--bg-card);
+      border: 1px solid var(--border);
+      border-radius: 24px;
+      padding: 2.25rem 2rem;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      position: relative;
+    }
+    .price-card.featured {
+      border: 2px solid var(--emerald);
+      background: linear-gradient(180deg, rgba(16, 185, 129, 0.09) 0%, rgba(15, 23, 42, 0.96) 100%);
+      box-shadow: 0 25px 60px -15px rgba(16, 185, 129, 0.25);
+    }
+    .popular-ribbon {
+      position: absolute;
+      top: -14px;
+      right: 24px;
+      background: linear-gradient(135deg, var(--emerald), var(--cyan));
+      color: #04130e;
+      font-weight: 800;
+      font-size: 0.76rem;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+      padding: 0.35rem 0.9rem;
+      border-radius: 999px;
+    }
+    .price-title {
+      font-size: 1.3rem;
+      font-weight: 800;
+      margin-bottom: 0.4rem;
+    }
+    .price-sub {
+      color: var(--text-muted);
+      font-size: 0.9rem;
+      margin-bottom: 1.5rem;
+    }
+    .price-amount {
+      display: flex;
+      align-items: baseline;
+      gap: 0.4rem;
+      margin-bottom: 0.35rem;
+    }
+    .price-num {
+      font-size: 3rem;
+      font-weight: 900;
+      letter-spacing: -0.03em;
+      line-height: 1;
+    }
+    .price-curr {
+      font-size: 1.15rem;
+      font-weight: 700;
+      color: var(--emerald);
+    }
+    .price-note {
+      font-size: 0.82rem;
+      color: var(--text-muted);
+      margin-bottom: 1.5rem;
+      padding-bottom: 1.5rem;
+      border-bottom: 1px solid var(--border);
+    }
+    .feature-list {
+      list-style: none;
+      display: flex;
+      flex-direction: column;
+      gap: 0.8rem;
+      margin-bottom: 2rem;
+    }
+    .feature-list li {
+      display: flex;
+      align-items: flex-start;
+      gap: 0.65rem;
+      font-size: 0.93rem;
+    }
+    .check {
+      color: var(--emerald);
+      font-weight: 900;
+      flex-shrink: 0;
+    }
+
+    /* Comparison Table */
+    .comp-table-wrap {
+      overflow-x: auto;
+      background: var(--bg-card);
+      border: 1px solid var(--border);
+      border-radius: 20px;
+    }
+    table.comp-table {
+      width: 100%;
+      border-collapse: collapse;
+      text-align: left;
+    }
+    .comp-table th, .comp-table td {
+      padding: 1.1rem 1.25rem;
+      border-bottom: 1px solid var(--border);
+      font-size: 0.93rem;
+    }
+    .comp-table th {
+      background: rgba(7, 11, 20, 0.6);
+      font-weight: 800;
+    }
+    .comp-table td.highlight-col, .comp-table th.highlight-col {
+      background: rgba(16, 185, 129, 0.08);
+      color: #f8fafc;
+      font-weight: 700;
+    }
+
+    /* Portfolio / Examples */
+    .examples-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 1.5rem;
+    }
+    .example-card {
+      background: var(--bg-card);
+      border: 1px solid var(--border);
+      border-radius: 18px;
+      padding: 1.5rem;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      gap: 1rem;
+      transition: border-color 0.2s, transform 0.2s;
+    }
+    .example-card:hover {
+      border-color: var(--emerald);
+      transform: translateY(-3px);
+    }
+
+    /* FAQ */
+    .faq-grid {
+      max-width: 860px;
+      margin: 0 auto;
+      display: flex;
+      flex-direction: column;
+      gap: 1rem;
+    }
+    details.faq-item {
+      background: var(--bg-card);
+      border: 1px solid var(--border);
+      border-radius: 16px;
+      padding: 1.2rem 1.4rem;
+    }
+    details.faq-item summary {
+      font-weight: 700;
+      font-size: 1.02rem;
+      cursor: pointer;
+      list-style: none;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 1rem;
+    }
+    details.faq-item p {
+      margin-top: 0.85rem;
+      color: var(--text-muted);
+      font-size: 0.94rem;
+    }
+
+    /* Bottom CTA */
+    .cta-banner {
+      background: linear-gradient(135deg, rgba(16, 185, 129, 0.16), rgba(6, 182, 212, 0.14));
+      border: 1px solid var(--border-accent);
+      border-radius: 28px;
+      padding: 3.25rem 2rem;
+      text-align: center;
+      margin-bottom: 4rem;
+    }
+
+    footer {
+      border-top: 1px solid var(--border);
+      padding: 2.25rem 0;
+      color: var(--text-muted);
+      font-size: 0.86rem;
+      text-align: center;
+    }
+
+    @media (max-width: 960px) {
+      .hero-grid, .sim-grid, .pricing-grid, .examples-grid {
+        grid-template-columns: 1fr;
+      }
+      .steps-grid {
+        grid-template-columns: repeat(2, 1fr);
+      }
+      .nav-links {
+        display: none;
+      }
+    }
+    @media (max-width: 600px) {
+      .steps-grid, .hero-trust {
+        grid-template-columns: 1fr;
+      }
+      .hero {
+        padding: 2.5rem 0 3rem;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Top Sticky Navigation -->
+  <header class="topbar">
+    <div class="container topbar-inner">
+      <a href="https://warsztatcyfrowy.pl" class="brand">
+        <span class="brand-badge">WC</span>
+        <span>Warsztat Cyfrowy <span style="color: var(--emerald); font-weight: 600;">· Wizytówka AI</span></span>
+      </a>
+      <nav class="nav-links">
+        <a href="#jak-to-dziala">Jak to działa</a>
+        <a href="#symulator">Edycja z telefonu</a>
+        <a href="#cennik">Cennik (399 zł)</a>
+        <a href="#przyklady">Przykłady na żywo</a>
+        <a href="#faq">FAQ</a>
+      </nav>
+      <a href="https://warsztatcyfrowy.pl/#uslugi" class="btn btn-primary btn-sm">
+        Zamów za 399 zł →
+      </a>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <div class="container hero-grid">
+      <div>
+        <div class="pill">
+          <span class="pill-dot"></span>
+          <span>NOWOŚĆ: Automat Webmasterski na WhatsApp i E-mail</span>
+        </div>
+        <h1>
+          Wyślij opis i zdjęcia na WhatsApp.<br />
+          <span class="gradient-text">Odbierz gotową stronę .pl w 5 minut!</span>
+        </h1>
+        <p class="hero-lead">
+          Koniec z czekaniem tygodniami na agencję i męczeniem się w trudnych kreatorach. Płacisz <strong>399 zł jednorazowo</strong>, wysyłasz materiały tak jak wiadomość do znajomego, dopracowujesz projekt <strong>bez limitu poprawek</strong> i publikujesz pod własną domeną <strong>.pl z certyfikatem SSL</strong>.
+        </p>
+        <div class="hero-ctas">
+          <a href="https://warsztatcyfrowy.pl/#uslugi" class="btn btn-primary">
+            🚀 Zamów stronę-wizytówkę (399 zł) →
+          </a>
+          <a href="#jak-to-dziala" class="btn btn-outline">
+            Zobacz schemat działania ↓
+          </a>
+        </div>
+        <div class="hero-trust">
+          <div class="trust-item">
+            <span class="trust-val">399 zł brutto</span>
+            <span class="trust-lbl">Domena .pl + SSL + Hosting w cenie</span>
+          </div>
+          <div class="trust-item">
+            <span class="trust-val">0 limitów</span>
+            <span class="trust-lbl">Poprawki przed odbiorem + 48h po starcie</span>
+          </div>
+          <div class="trust-item">
+            <span class="trust-val">~4 sekundy</span>
+            <span class="trust-lbl">Czas wdrożenia zmiany z WhatsAppa</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Visual Graphic: WhatsApp to Website Mockup -->
+      <div class="mockup-wrap" aria-label="Wizualizacja działania automatu stron przez WhatsApp">
+        <div class="wa-header">
+          <div class="wa-header-left">
+            <div class="wa-avatar">WC</div>
+            <div>
+              <div class="wa-title">Warsztat Cyfrowy — Asystent Stron WWW</div>
+              <div class="wa-status">● online · automatyczny webmaster 24/7</div>
+            </div>
+          </div>
+          <span style="font-size: 0.75rem; background: rgba(0,0,0,0.25); padding: 0.25rem 0.55rem; border-radius: 6px;">WhatsApp / E-mail</span>
+        </div>
+
+        <div class="wa-chat">
+          <div class="msg msg-user">
+            Cześć! Prowadzę firmę KlimaPro w Poznaniu. Montaż klimatyzacji od 1490 zł, serwis 250 zł, tel. 600 100 200. Dorzucam zdjęcia realizacji. <strong>START</strong>
+            <div class="photo-chips">
+              <span class="photo-chip">📷 realizacja-1.jpg</span>
+              <span class="photo-chip">📷 serwis-klima.jpg</span>
+            </div>
+            <span class="msg-time">12:01 ✓✓</span>
+          </div>
+
+          <div class="msg msg-bot">
+            ✅ <strong>Wersja robocza Twojej strony jest gotowa!</strong><br />
+            Możesz wprowadzać dowolne poprawki lub wybrać wolną domenę <code>.pl</code>:<br />
+            <strong>1.</strong> <code>klimapro24.pl</code> · <strong>2.</strong> <code>klima-poznan24.pl</code>
+            <span class="msg-time">12:04</span>
+          </div>
+
+          <div class="msg msg-user">
+            Dodaj jeszcze w nagłówku: „Dojazd i wycena w Poznaniu 0 zł!” i wybieram domenę <strong>1</strong>
+            <span class="msg-time">12:05 ✓✓</span>
+          </div>
+
+          <div class="msg msg-bot">
+            🎉 <strong>Gotowe w 4 sekundy!</strong> Wprowadziliśmy zmiany i opublikowaliśmy stronę pod domeną <strong>https://klimapro24.pl</strong> (SSL aktywny). Przez 48h masz jeszcze darmowe poprawki startowe!
+            <span class="msg-time">12:05</span>
+          </div>
+        </div>
+
+        <div class="site-preview-bar">
+          <div class="url-pill">
+            <span>🔒</span>
+            <span>https://klimapro24.pl</span>
+          </div>
+          <span class="lh-badge">⚡ Google Speed: 99/100</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Infographic / How it Works Step-by-Step + SVG Diagram -->
+  <section id="jak-to-dziala">
+    <div class="container">
+      <div class="section-head">
+        <span class="section-tag">Schemat Działania Krok po Kroku</span>
+        <h2>Jak powstaje Twoja strona z wiadomości na WhatsAppie?</h2>
+        <p>Cały proces zaprojektowaliśmy dla zapracowanych właścicieli firm i fachowców. Zero formularzy na 50 pól, zero logowania do paneli administracyjnych.</p>
+      </div>
+
+      <!-- Visual SVG Flow Diagram -->
+      <div class="diagram-box">
+        <svg viewBox="0 0 1080 175" width="100%" height="auto" role="img" aria-label="Schemat procesu budowy strony WWW z WhatsAppa" style="display:block; margin-bottom: 1.75rem;">
+          <defs>
+            <linearGradient id="flowGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+              <stop offset="0%" stop-color="#10b981" />
+              <stop offset="50%" stop-color="#06b6d4" />
+              <stop offset="100%" stop-color="#10b981" />
+            </linearGradient>
+          </defs>
+          <!-- Connecting lines -->
+          <line x1="150" y1="78" x2="930" y2="78" stroke="url(#flowGrad)" stroke-width="4" stroke-dasharray="8 6" />
+
+          <!-- Node 1 -->
+          <g transform="translate(30, 18)">
+            <rect width="210" height="120" rx="18" fill="#0b1324" stroke="#10b981" stroke-width="2" />
+            <text x="105" y="42" text-anchor="middle" fill="#34d399" font-family="Inter, sans-serif" font-weight="800" font-size="14">1. ZAMÓWIENIE (399 ZŁ)</text>
+            <text x="105" y="68" text-anchor="middle" fill="#f8fafc" font-family="Inter, sans-serif" font-weight="600" font-size="13">Płatność Stripe / BLIK</text>
+            <text x="105" y="92" text-anchor="middle" fill="#94a3b8" font-family="Inter, sans-serif" font-size="12">Aktywacja Twojego numeru</text>
+          </g>
+
+          <!-- Node 2 -->
+          <g transform="translate(300, 18)">
+            <rect width="210" height="120" rx="18" fill="#0b1324" stroke="#06b6d4" stroke-width="2" />
+            <text x="105" y="42" text-anchor="middle" fill="#22d3ee" font-family="Inter, sans-serif" font-weight="800" font-size="14">2. WHATSAPP / E-MAIL</text>
+            <text x="105" y="68" text-anchor="middle" fill="#f8fafc" font-family="Inter, sans-serif" font-weight="600" font-size="13">Wysyłasz opis + zdjęcia</text>
+            <text x="105" y="92" text-anchor="middle" fill="#94a3b8" font-family="Inter, sans-serif" font-size="12">I piszesz komendę „START”</text>
+          </g>
+
+          <!-- Node 3 -->
+          <g transform="translate(570, 18)">
+            <rect width="210" height="120" rx="18" fill="#0b1324" stroke="#10b981" stroke-width="2" />
+            <text x="105" y="42" text-anchor="middle" fill="#34d399" font-family="Inter, sans-serif" font-weight="800" font-size="14">3. PROJEKT I POPRAWKI</text>
+            <text x="105" y="68" text-anchor="middle" fill="#f8fafc" font-family="Inter, sans-serif" font-weight="600" font-size="13">Nielimitowane zmiany</text>
+            <text x="105" y="92" text-anchor="middle" fill="#94a3b8" font-family="Inter, sans-serif" font-size="12">+ 5 wolnych domen .pl</text>
+          </g>
+
+          <!-- Node 4 -->
+          <g transform="translate(840, 18)">
+            <rect width="210" height="120" rx="18" fill="#0b1324" stroke="#10b981" stroke-width="2" />
+            <text x="105" y="42" text-anchor="middle" fill="#34d399" font-family="Inter, sans-serif" font-weight="800" font-size="14">4. PUBLIKACJA .PL + SSL</text>
+            <text x="105" y="68" text-anchor="middle" fill="#f8fafc" font-family="Inter, sans-serif" font-weight="600" font-size="13">Automatyczny DNS + HTTPS</text>
+            <text x="105" y="92" text-anchor="middle" fill="#94a3b8" font-family="Inter, sans-serif" font-size="12">+ 48h gwarancji / CMS 24/7</text>
+          </g>
+        </svg>
+
+        <div class="steps-grid">
+          <div class="step-card">
+            <div class="step-num">01</div>
+            <h3>Zamawiasz na WarsztatCyfrowy.pl</h3>
+            <p>Wybierasz pakiet za 399 zł, podajesz swój numer telefonu oraz e-mail. W ciągu kilku sekund otrzymujesz wiadomość powitalną na WhatsAppie.</p>
+            <span class="step-badge">Czas: 30 sekund</span>
+          </div>
+
+          <div class="step-card">
+            <div class="step-num">02</div>
+            <h3>Wysyłasz materiały i piszesz START</h3>
+            <p>W jednym lub kilku dymkach wysyłasz opis swoich usług, cennik, telefon i zdjęcia z telefonu. Gdy prześlesz wszystko, piszesz słowo <strong>START</strong>.</p>
+            <span class="step-badge">Własnymi słowami</span>
+          </div>
+
+          <div class="step-card">
+            <div class="step-num">03</div>
+            <h3>Dopracowujesz wersję roboczą bez limitu</h3>
+            <p>Otrzymujesz link do gotowej strony oraz 5 propozycji wolnych domen <code>.pl</code>. Chcesz zmienić kolor, układ lub dopisać usługę? Piszesz na WhatsAppie i w 4 sekundy gotowe!</p>
+            <span class="step-badge">Brak limitu poprawek!</span>
+          </div>
+
+          <div class="step-card">
+            <div class="step-num">04</div>
+            <h3>Wybierasz domenę .pl i jesteś w sieci</h3>
+            <p>Odpisujesz numerem wybranej domeny (np. <strong>1</strong>). Automat rejestruje domenę <code>.pl</code>, podpina DNS oraz certyfikat SSL. Masz jeszcze 48h na darmowe poprawki po starcie!</p>
+            <span class="step-badge">Gotowe pod klucz</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Interactive Simulator Section -->
+  <section id="symulator" style="padding-top: 1rem;">
+    <div class="container">
+      <div class="section-head">
+        <span class="section-tag">Interaktywny Podgląd</span>
+        <h2>Kliknij wiadomość i zobacz, jak łatwo edytujesz stronę</h2>
+        <p>Nie musisz logować się do WordPressa ani dzwonić do informatyka. Kliknij jedną z przykładowych wiadomości poniżej:</p>
+      </div>
+
+      <div class="sim-grid">
+        <div class="sim-buttons">
+          <button type="button" class="sim-btn active" data-title="Serwis Klimatyzacji Poznań — Montaż od 1490 zł" data-sub="📞 600 100 200 · Dojazd i wycena na terenie Poznania 0 zł!" data-badge="Promocja Wiosenna: Przegląd z odgrzybianiem 199 zł" data-time="Wdrożono w 3.8 s przez kontener CMS">
+            <span class="sim-btn-label">Wiadomość na WhatsApp #1 (Promocja i Cennik)</span>
+            <span class="sim-btn-text">„Dodaj na górze strony informację: Promocja Wiosenna — przegląd z odgrzybianiem 199 zł oraz dojazd w Poznaniu 0 zł”</span>
+          </button>
+
+          <button type="button" class="sim-btn" data-title="Pogotowie Klimatyzacyjne 24/7 — Poznań i okolice" data-sub="📞 798 555 444 · Czynne również w soboty 8:00–16:00" data-badge="Ekspresowa naprawa i serwis F-Gaz jeszcze dziś!" data-time="Wdrożono w 3.4 s przez kontener CMS">
+            <span class="sim-btn-label">Wiadomość na WhatsApp #2 (Zmiana numeru i godzin)</span>
+            <span class="sim-btn-text">„Zmień numer telefonu na 798 555 444 i dopisz, że pracujemy również w soboty od 8:00 do 16:00 jako pogotowie 24/7”</span>
+          </button>
+
+          <button type="button" class="sim-btn" data-title="KlimaPro Poznań — Klimatyzacja do Domu i Biura" data-sub="📞 600 100 200 · Autoryzowany montaż GREE, Rotenso, Kaisai" data-badge="5 lat gwarancji na montaż + certyfikat F-Gaz" data-time="Wdrożono w 4.1 s przez kontener CMS">
+            <span class="sim-btn-label">Wiadomość na WhatsApp #3 (Nowe marki w ofercie)</span>
+            <span class="sim-btn-text">„Dopisz, że jesteśmy autoryzowanym instalatorem GREE, Rotenso i Kaisai i dajemy 5 lat gwarancji na montaż”</span>
+          </button>
+        </div>
+
+        <div class="sim-screen">
+          <div>
+            <div class="sim-browser-top">
+              <div class="dots"><span></span><span></span><span></span></div>
+              <span style="font-family: 'JetBrains Mono', monospace; font-size: 0.78rem; color: #34d399;">🔒 https://klimapro24.pl</span>
+              <span id="sim-time" style="font-size: 0.74rem; color: #22d3ee;">Wdrożono w 3.8 s przez kontener CMS</span>
+            </div>
+
+            <div style="background: rgba(16, 185, 129, 0.14); border: 1px solid var(--border-accent); color: #34d399; padding: 0.45rem 0.85rem; border-radius: 999px; display: inline-block; font-size: 0.8rem; font-weight: 700; margin-bottom: 1rem;" id="sim-badge">
+              Promocja Wiosenna: Przegląd z odgrzybianiem 199 zł
+            </div>
+
+            <h3 id="sim-title" style="font-size: 1.6rem; font-weight: 800; line-height: 1.22; margin-bottom: 0.75rem;">
+              Serwis Klimatyzacji Poznań — Montaż od 1490 zł
+            </h3>
+
+            <p id="sim-sub" style="color: #cbd5e1; font-size: 1rem; margin-bottom: 1.4rem;">
+              📞 600 100 200 · Dojazd i wycena na terenie Poznania 0 zł!
+            </p>
+          </div>
+
+          <div style="display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 0.75rem; padding-top: 1rem; border-top: 1px solid var(--border);">
+            <span style="font-size: 0.8rem; color: var(--text-muted);">✓ Automatyczna publikacja na GitHub Pages + SSL</span>
+            <a href="https://warsztatcyfrowy.pl/#uslugi" class="btn btn-primary btn-sm">Wypróbuj na własnej stronie →</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Pricing Section -->
+  <section id="cennik">
+    <div class="container">
+      <div class="section-head">
+        <span class="section-tag">Przejrzysty Cennik</span>
+        <h2>Jedna uczciwa cena. Zero ukrytych kosztów.</h2>
+        <p>Wybierz samą stronę-wizytówkę „Pod Klucz” lub dodaj opcjonalny pakiet nielimitowanej opieki CMS przez WhatsApp i E-mail.</p>
+      </div>
+
+      <div class="pricing-grid">
+        <!-- Plan 1 -->
+        <div class="price-card">
+          <div>
+            <div class="price-title">Strona-Wizytówka „Pod Klucz”</div>
+            <p class="price-sub">Kompletna strona firmowa z domeną .pl i darmowymi poprawkami na start.</p>
+            <div class="price-amount">
+              <span class="price-num">399</span>
+              <span class="price-curr">zł brutto (jednorazowo)</span>
+            </div>
+            <p class="price-note">Brak obowiązkowego abonamentu. Płacisz raz i strona działa przez cały rok.</p>
+
+            <ul class="feature-list">
+              <li><span class="check">✓</span> <span><strong>Domena .pl na 1. rok w cenie</strong> (automatyczna rejestracja z naszej puli)</span></li>
+              <li><span class="check">✓</span> <span><strong>Szybki hosting + certyfikat SSL (HTTPS)</strong> bez opłat miesięcznych</span></li>
+              <li><span class="check">✓</span> <span><strong>Nielimitowane poprawki wersji roboczej</strong> przed akceptacją i wyborem domeny</span></li>
+              <li><span class="check">✓</span> <span><strong>48 godzin okna gwarancyjnego</strong> po publikacji na bezpłatne korekty startowe</span></li>
+              <li><span class="check">✓</span> <span>Optymalizacja SEO (Schema.org LocalBusiness, mapa сайта, szybkość 99/100)</span></li>
+              <li><span class="check">✓</span> <span>Galeria zdjęć WebP, cennik, sekcja FAQ i szybki kontakt telefoniczny</span></li>
+            </ul>
+          </div>
+
+          <a href="https://warsztatcyfrowy.pl/#uslugi" class="btn btn-outline" style="width: 100%;">
+            Zamów pakiet za 399 zł na WarsztatCyfrowy.pl →
+          </a>
+        </div>
+
+        <!-- Plan 2 (Featured) -->
+        <div class="price-card featured">
+          <span class="popular-ribbon">Najczęściej wybierany</span>
+          <div>
+            <div class="price-title">Wizytówka + Opieka WhatsApp CMS 24/7</div>
+            <p class="price-sub">Dla firm, które chcą w każdej chwili zmieniać cennik, zdjęcia i ofertę jedną wiadomością.</p>
+            <div class="price-amount">
+              <span class="price-num">399</span>
+              <span class="price-curr">zł + 29 zł / mies.</span>
+            </div>
+            <p class="price-note">Możesz anulować subskrypcję 29 zł/mies. jednym kliknięciem w dowolnym momencie.</p>
+
+            <ul class="feature-list">
+              <li><span class="check">✓</span> <span><strong>Wszystko z pakietu „Pod Klucz”</strong> (strona WWW + domena .pl + SSL + hosting)</span></li>
+              <li><span class="check">✓</span> <span><strong>Nielimitowane aktualizacje strony 24/7 przez cały rok</strong> prosto z WhatsAppa i E-maila</span></li>
+              <li><span class="check">✓</span> <span>Zmiana cen, godzin otwarcia, numeru telefonu lub tekstów w <strong>~4 sekundy</strong></span></li>
+              <li><span class="check">✓</span> <span>Dodawanie nowych zdjęć realizacji prosto z aparatu w telefonie</span></li>
+              <li><span class="check">✓</span> <span>Dedykowany, izolowany kontener AI chroniony filtrem bezpieczeństwa TypeSafe Jev</span></li>
+              <li><span class="check">✓</span> <span>Priorytetowe wsparcie techniczne Warsztatu Cyfrowego</span></li>
+            </ul>
+          </div>
+
+          <a href="https://warsztatcyfrowy.pl/#uslugi" class="btn btn-primary" style="width: 100%;">
+            🚀 Zamów z Pakietem Opieki na WarsztatCyfrowy.pl →
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Comparison Table -->
+  <section style="padding-top: 1rem;">
+    <div class="container">
+      <div class="section-head">
+        <span class="section-tag">Porównanie Rozwiązań</span>
+        <h2>Dlaczego przedsiębiorcy wybierają nasz automat?</h2>
+      </div>
+
+      <div class="comp-table-wrap">
+        <table class="comp-table">
+          <thead>
+            <tr>
+              <th>Kryterium</th>
+              <th class="highlight-col">⚡ Warsztat Cyfrowy (WhatsApp AI)</th>
+              <th>Tradycyjna agencja WWW</th>
+              <th>Samodzielny kreator (Wix / WordPress)</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><strong>Koszt uruchomienia</strong></td>
+              <td class="highlight-col">399 zł (z domeną .pl w cenie)</td>
+              <td>2 500 – 6 000 zł</td>
+              <td>0 zł + kilkanaście godzin Twojej pracy</td>
+            </tr>
+            <tr>
+              <td><strong>Czas powstania strony</strong></td>
+              <td class="highlight-col">3 – 5 minut po napisaniu START</td>
+              <td>2 – 5 tygodni</td>
+              <td>2 – 4 dni nauki narzędzia</td>
+            </tr>
+            <tr>
+              <td><strong>Poprawki przed odbiorem</strong></td>
+              <td class="highlight-col">Bez limitu + 48h po publikacji gratis</td>
+              <td>Zwykle 1–2 tury w umowie</td>
+              <td>Robisz wszystko ręcznie sam</td>
+            </tr>
+            <tr>
+              <td><strong>Jak zmieniasz cennik lub zdjęcie?</strong></td>
+              <td class="highlight-col">Piszesz 1 wiadomość na WhatsAppie (4 sekundy)</td>
+              <td>Płacisz 150–300 zł za godzinę pracy programisty</td>
+              <td>Logujesz się na komputerze i szukasz w panelu</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </section>
+
+  <!-- Live Examples -->
+  <section id="przyklady">
+    <div class="container">
+      <div class="section-head">
+        <span class="section-tag">Zobacz Na Żywo</span>
+        <h2>Przykładowe strony wygenerowane z wiadomości WhatsApp</h2>
+        <p>Każda strona powstaje indywidualnie pod branżę klienta — z lokalnym SEO, cennikiem i wyeksponowanym przyciskiem telefonu.</p>
+      </div>
+
+      <div class="examples-grid">
+        <div class="example-card">
+          <div>
+            <span style="font-size: 0.76rem; color: var(--emerald); font-weight: 700; text-transform: uppercase;">Branża HVAC / Instalacje</span>
+            <h3 style="margin: 0.35rem 0 0.5rem;">KlimaPro — Serwis i Montaż Klimatyzacji</h3>
+            <p style="font-size: 0.88rem; color: var(--text-muted);">Wygenerowana w 3 minuty z pojedynczej wiadomości tekstowej na WhatsAppie. Zawiera cennik usług, certyfikaty F-Gaz oraz szybki kontakt.</p>
+          </div>
+          <a href="https://filipescu88.github.io/wizytowka-stefan-informatyk-a9ed8a/" target="_blank" rel="noopener" class="btn btn-outline btn-sm">
+            Zobacz stronę na żywo ↗
+          </a>
+        </div>
+
+        <div class="example-card">
+          <div>
+            <span style="font-size: 0.76rem; color: var(--emerald); font-weight: 700; text-transform: uppercase;">Branża Usługowa / Serwis</span>
+            <h3 style="margin: 0.35rem 0 0.5rem;">Kowalczyk Instalacje — Pogotowie 24/7</h3>
+            <p style="font-size: 0.88rem; color: var(--text-muted);">Strona z sekcją usług awaryjnych, cennikiem, opiniami klientów oraz edycją w czasie rzeczywistym przez kontener CMS.</p>
+          </div>
+          <a href="https://filipescu88.github.io/wizytowka-jan-testowy-b4fb30/" target="_blank" rel="noopener" class="btn btn-outline btn-sm">
+            Zobacz stronę na żywo ↗
+          </a>
+        </div>
+
+        <div class="example-card">
+          <div>
+            <span style="font-size: 0.76rem; color: var(--cyan); font-weight: 700; text-transform: uppercase;">Strona Główna & Płatności</span>
+            <h3 style="margin: 0.35rem 0 0.5rem;">Warsztat Cyfrowy — Wszystkie realizacje</h3>
+            <p style="font-size: 0.88rem; color: var(--text-muted);">Przejdź na główną stronę Warsztatu Cyfrowego, zobacz więcej wdrożeń i uruchom kreator zamówienia z bezpieczną płatnością Stripe.</p>
+          </div>
+          <a href="https://warsztatcyfrowy.pl/#realizacje" class="btn btn-primary btn-sm">
+            Przejdź do WarsztatCyfrowy.pl →
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ Section -->
+  <section id="faq">
+    <div class="container">
+      <div class="section-head">
+        <span class="section-tag">Najczęstsze Pytania (FAQ)</span>
+        <h2>Wszystko, co warto wiedzieć przed zamówieniem</h2>
+      </div>
+
+      <div class="faq-grid">
+        <details class="faq-item" open>
+          <summary>
+            <span>Ile razy mogę edytować stronę bez subskrypcji (w samym pakiecie za 399 zł)?</span>
+            <span style="color: var(--emerald);">+</span>
+          </summary>
+          <p>
+            Nie narzucamy żadnych sztywnych limitów ilościowych! Dopóki strona jest na etapie wersji roboczej (przed wyborem i rejestracją docelowej domeny <code>.pl</code>), możesz zgłaszać na WhatsAppie lub e-mailu dowolną liczbę poprawek. Co więcej, po wyborze domeny <code>.pl</code> i publikacji strony masz jeszcze <strong>48 godzin okna gwarancyjnego</strong> na bezpłatne poprawki startowe.
+          </p>
+        </details>
+
+        <details class="faq-item">
+          <summary>
+            <span>Co daje subskrypcja Opieki za 29 zł/mies. i czy jest obowiązkowa?</span>
+            <span style="color: var(--emerald);">+</span>
+          </summary>
+          <p>
+            Subskrypcja jest całkowicie opcjonalna. Jeśli ją wybierzesz (lub włączysz w przyszłości), możesz przez cały rok w dowolnym momencie wysłać wiadomość na WhatsAppie (np. <em>„zmień cennik na zimowy”</em>, <em>„dodaj nowe zdjęcie z realizacji”</em>), a nasz automat wdroży zmianę na stronie w około 4 sekundy.
+          </p>
+        </details>
+
+        <details class="faq-item">
+          <summary>
+            <span>Co jeśli w trakcie generowania strony przypomnę sobie o jeszcze jednym zdjęciu?</span>
+            <span style="color: var(--emerald);">+</span>
+          </summary>
+          <p>
+            Nic nie szkodzi! Nasz system posiada dwupasmową kolejkę i inteligentny klasyfikator wiadomości. Jeśli doślesz zdjęcie w trakcie budowy strony, zostanie ono bezpiecznie zapisane w Twojej teczce, a po kilkudziesięciu sekundach — gdy pierwsza wersja się wygeneruje — od razu naniesiemy je na stronę.
+          </p>
+        </details>
+
+        <details class="faq-item">
+          <summary>
+            <span>Czy domena .pl i certyfikat SSL są naprawdę wliczone w 399 zł?</span>
+            <span style="color: var(--emerald);">+</span>
+          </summary>
+          <p>
+            Tak. W cenie 399 zł automatycznie sprawdzamy wolne domeny <code>.pl</code> pasujące do Twojej firmy, rejestrujemy wybraną przez Ciebie domenę na pierwszy rok, konfigurujemy serwery DNS oraz uruchamiamy darmowy certyfikat SSL (zielona kłódka HTTPS).
+          </p>
+        </details>
+      </div>
+    </div>
+  </section>
+
+  <!-- Bottom CTA Banner -->
+  <div class="container">
+    <div class="cta-banner">
+      <h2 style="font-size: clamp(1.7rem, 3vw, 2.4rem); font-weight: 900; margin-bottom: 0.75rem;">
+        Gotowy na własną stronę firmową w 5 minut?
+      </h2>
+      <p style="color: var(--text-muted); max-width: 620px; margin: 0 auto 1.75rem; font-size: 1.05rem;">
+        Kliknij poniżej, przejdź do formularza zamówienia na <strong>WarsztatCyfrowy.pl</strong> i odbierz wiadomość powitalną na swoim WhatsAppie!
+      </p>
+      <a href="https://warsztatcyfrowy.pl/#uslugi" class="btn btn-primary" style="font-size: 1.08rem; padding: 1rem 2rem;">
+        🚀 Przejdź do zamówienia na WarsztatCyfrowy.pl (399 zł) →
+      </a>
+    </div>
+  </div>
+
+  <footer>
+    <div class="container">
+      <p>© 2026 <a href="https://warsztatcyfrowy.pl" style="color: var(--emerald); text-decoration: none; font-weight: 600;">Warsztat Cyfrowy</a> · Automatyczne Strony-Wizytówki WWW z obsługą przez WhatsApp i E-mail.</p>
+    </div>
+  </footer>
+
+  <script>
+    (function () {
+      var btns = document.querySelectorAll('.sim-btn');
+      var titleEl = document.getElementById('sim-title');
+      var subEl = document.getElementById('sim-sub');
+      var badgeEl = document.getElementById('sim-badge');
+      var timeEl = document.getElementById('sim-time');
+
+      btns.forEach(function (btn) {
+        btn.addEventListener('click', function () {
+          btns.forEach(function (b) { b.classList.remove('active'); });
+          btn.classList.add('active');
+          if (titleEl) titleEl.textContent = btn.getAttribute('data-title');
+          if (subEl) subEl.textContent = btn.getAttribute('data-sub');
+          if (badgeEl) badgeEl.textContent = btn.getAttribute('data-badge');
+          if (timeEl) timeEl.textContent = btn.getAttribute('data-time');
+        });
+      });
+    })();
+  </script>
+</body>
+</html>
