@@ -695,7 +695,92 @@
       font-weight: 700;
     }
 
-    /* Portfolio / Examples */
+    /* Portfolio / Examples & Prompt->Realizacja Showcase */
+    .prompt-showcase-list {
+      display: flex;
+      flex-direction: column;
+      gap: 2.25rem;
+      margin-bottom: 2.5rem;
+    }
+    .prompt-showcase-card {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 1.75rem;
+      background: var(--bg-card);
+      border: 1px solid var(--border);
+      border-radius: 24px;
+      padding: 1.85rem;
+      align-items: stretch;
+    }
+    .prompt-box {
+      background: #0b141a;
+      border: 1px solid rgba(16, 185, 129, 0.3);
+      border-radius: 18px;
+      padding: 1.35rem;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }
+    .prompt-bubble {
+      background: #005c4b;
+      color: #e9edef;
+      border-radius: 14px;
+      border-bottom-right-radius: 4px;
+      padding: 1rem 1.15rem;
+      font-size: 0.84rem;
+      line-height: 1.5;
+      white-space: pre-line;
+      font-family: 'Inter', sans-serif;
+    }
+    .realization-box {
+      background: rgba(7, 11, 20, 0.75);
+      border: 1px solid var(--border-accent);
+      border-radius: 18px;
+      padding: 1.5rem;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }
+    .pay-badges {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      gap: 0.55rem;
+      margin-top: 0.9rem;
+    }
+    .blik-pill {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.4rem;
+      background: #111827;
+      border: 1px solid rgba(255, 255, 255, 0.22);
+      color: #fff;
+      font-weight: 900;
+      font-size: 0.78rem;
+      padding: 0.3rem 0.7rem;
+      border-radius: 8px;
+      letter-spacing: 0.04em;
+    }
+    .blik-dot {
+      width: 7px;
+      height: 7px;
+      border-radius: 50%;
+      background: #ef4444;
+      display: inline-block;
+    }
+    .pay-pill {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.35rem;
+      background: rgba(15, 23, 42, 0.8);
+      border: 1px solid var(--border);
+      color: var(--text-muted);
+      font-weight: 600;
+      font-size: 0.76rem;
+      padding: 0.3rem 0.65rem;
+      border-radius: 8px;
+    }
+
     .examples-grid {
       display: grid;
       grid-template-columns: repeat(3, 1fr);
@@ -766,7 +851,7 @@
     }
 
     @media (max-width: 960px) {
-      .hero-grid, .sim-grid, .pricing-grid, .examples-grid {
+      .hero-grid, .sim-grid, .pricing-grid, .examples-grid, .prompt-showcase-card {
         grid-template-columns: 1fr;
       }
       .steps-grid {
@@ -797,13 +882,13 @@
       </a>
       <nav class="nav-links">
         <a href="#jak-to-dziala">Jak to działa</a>
+        <a href="#przyklady">Prompt → Realizacja</a>
         <a href="#symulator">Edycja z telefonu</a>
         <a href="#cennik">Cennik (399 zł)</a>
-        <a href="#przyklady">Przykłady na żywo</a>
         <a href="#faq">FAQ</a>
       </nav>
       <a href="https://warsztatcyfrowy.pl/#uslugi" class="btn btn-primary btn-sm">
-        Zamów za 399 zł →
+        Zamów za 399 zł (BLIK) →
       </a>
     </div>
   </header>
@@ -821,15 +906,21 @@
           <span class="gradient-text">Odbierz gotową stronę .pl w 5 minut!</span>
         </h1>
         <p class="hero-lead">
-          Koniec z czekaniem tygodniami na agencję i męczeniem się w trudnych kreatorach. Płacisz <strong>399 zł jednorazowo</strong>, wysyłasz materiały tak jak wiadomość do znajomego, dopracowujesz projekt <strong>bez limitu poprawek</strong> i publikujesz pod własną domeną <strong>.pl z certyfikatem SSL</strong>.
+          Koniec z czekaniem tygodniami na agencję i męczeniem się w trudnych kreatorach. Płacisz <strong>399 zł jednorazowo (BLIK / Karta)</strong>, wysyłasz materiały tak jak wiadomość do znajomego, dopracowujesz projekt <strong>bez limitu poprawek</strong> i publikujesz pod własną domeną <strong>.pl z certyfikatem SSL</strong>.
         </p>
-        <div class="hero-ctas">
+        <div class="hero-ctas" style="margin-bottom: 0.85rem;">
           <a href="https://warsztatcyfrowy.pl/#uslugi" class="btn btn-primary">
             🚀 Zamów stronę-wizytówkę (399 zł) →
           </a>
-          <a href="#jak-to-dziala" class="btn btn-outline">
-            Zobacz schemat działania ↓
+          <a href="#przyklady" class="btn btn-outline">
+            Zobacz Prompt → Gotowa strona ↓
           </a>
+        </div>
+        <div class="pay-badges" style="margin-bottom: 1.75rem;">
+          <span class="blik-pill"><span class="blik-dot"></span> BLIK</span>
+          <span class="pay-pill">💳 Karta Visa / Mastercard</span>
+          <span class="pay-pill">🍎 Apple Pay / Google Pay</span>
+          <span class="pay-pill">🔒 Bezpieczne płatności Stripe</span>
         </div>
         <div class="hero-trust">
           <div class="trust-item">
@@ -925,7 +1016,7 @@
           <g transform="translate(30, 18)">
             <rect width="210" height="120" rx="18" fill="#0b1324" stroke="#10b981" stroke-width="2" />
             <text x="105" y="42" text-anchor="middle" fill="#34d399" font-family="Inter, sans-serif" font-weight="800" font-size="14">1. ZAMÓWIENIE (399 ZŁ)</text>
-            <text x="105" y="68" text-anchor="middle" fill="#f8fafc" font-family="Inter, sans-serif" font-weight="600" font-size="13">Płatność Stripe / BLIK</text>
+            <text x="105" y="68" text-anchor="middle" fill="#f8fafc" font-family="Inter, sans-serif" font-weight="600" font-size="13">Szybka płatność BLIK / Karta</text>
             <text x="105" y="92" text-anchor="middle" fill="#94a3b8" font-family="Inter, sans-serif" font-size="12">Aktywacja Twojego numeru</text>
           </g>
 
@@ -957,9 +1048,9 @@
         <div class="steps-grid">
           <div class="step-card">
             <div class="step-num">01</div>
-            <h3>Zamawiasz na WarsztatCyfrowy.pl</h3>
-            <p>Wybierasz pakiet za 399 zł, podajesz swój numer telefonu oraz e-mail. W ciągu kilku sekund otrzymujesz wiadomość powitalną na WhatsAppie.</p>
-            <span class="step-badge">Czas: 30 sekund</span>
+            <h3>Zamawiasz i płacisz BLIK-iem</h3>
+            <p>Wybierasz pakiet za 399 zł na WarsztatCyfrowy.pl, płacisz wygodnie kodem BLIK lub kartą. W kilka sekund otrzymujesz wiadomość powitalną na WhatsAppie.</p>
+            <span class="step-badge">BLIK / Karta w 30 sekund</span>
           </div>
 
           <div class="step-card">
@@ -981,6 +1072,135 @@
             <h3>Wybierasz domenę .pl i jesteś w sieci</h3>
             <p>Odpisujesz numerem wybranej domeny (np. <strong>1</strong>). Automat rejestruje domenę <code>.pl</code>, podpina DNS oraz certyfikat SSL. Masz jeszcze 48h na darmowe poprawki po starcie!</p>
             <span class="step-badge">Gotowe pod klucz</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Real Prompt -> Real Website Showcase -->
+  <section id="przyklady" style="padding-top: 1rem;">
+    <div class="container">
+      <div class="section-head">
+        <span class="section-tag">Prawdziwy Prompt → Gotowa Realizacja 1:1</span>
+        <h2>Zobacz dokładnie co wysłał klient na WhatsAppie i jaka strona z tego powstała</h2>
+        <p>Zero ściemy i makiet z Photoshopa. Poniżej widzisz autentyczne wiadomości wysłane na nasz numer WhatsApp oraz działające strony WWW, które automat zbudował z nich w 3 minuty.</p>
+      </div>
+
+      <div class="prompt-showcase-list">
+        <!-- Case Study 1: Klima-Pro -->
+        <div class="prompt-showcase-card">
+          <div class="prompt-box">
+            <div>
+              <div style="display: flex; align-items: center; justify-content: space-between; margin-bottom: 0.85rem;">
+                <span style="font-size: 0.78rem; font-weight: 800; color: #34d399; text-transform: uppercase; letter-spacing: 0.05em;">
+                  💬 1. Co dokładnie napisał klient na WhatsAppie (Prompt):
+                </span>
+                <span style="font-size: 0.74rem; color: var(--text-muted); font-family: 'JetBrains Mono', monospace;">Czas pisania: ~1 min</span>
+              </div>
+              <div class="prompt-bubble">Dzień dobry, nazywam się Stefan Zieliński i prowadzę firmę „Klima-Pro Serwis Klimatyzacji i Wentylacji” w Poznaniu i okolicach (do 40 km).
+
+Zakres usług:
+- montaż klimatyzacji ściennej (split i multisplit) w domach i biurach
+- okresowe przeglądy, odgrzybianie i ozonowanie (certyfikat F-Gaz)
+- serwis pogwarancyjny (Gree, Rotenso, Kaisai, Mitsubishi)
+- darmowa wycena i dobór mocy urządzenia u klienta
+
+Cennik orientacyjny:
+- przegląd i odgrzybianie: od 200 zł
+- montaż klimatyzacji 3,5 kW z urządzeniem (8% VAT): od 3 400 zł
+- wycena i dojazd w Poznaniu: 0 zł
+
+Tel: +48 512 900 300 · ul. Głogowska 118, Poznań
+Styl strony: jasny, świeży (biel, chłodny błękit i grafit).
+<strong>START</strong></div>
+            </div>
+            <div style="margin-top: 0.9rem; font-size: 0.78rem; color: #94a3b8; display: flex; justify-content: space-between; align-items: center;">
+              <span>✓ Wysłano zwykłą wiadomością na WhatsApp</span>
+              <span style="color: #34d399; font-weight: 700;">0 linijek kodu po stronie klienta</span>
+            </div>
+          </div>
+
+          <div class="realization-box">
+            <div>
+              <div style="display: flex; align-items: center; justify-content: space-between; margin-bottom: 0.85rem; flex-wrap: wrap; gap: 0.5rem;">
+                <span style="font-size: 0.78rem; font-weight: 800; color: #22d3ee; text-transform: uppercase; letter-spacing: 0.05em;">
+                  🌐 2. Co wygenerował nasz automat w 3 minuty (Realizacja):
+                </span>
+                <span class="lh-badge">⚡ 32 KB · SEO 100/100</span>
+              </div>
+              <h3 style="font-size: 1.35rem; font-weight: 800; margin-bottom: 0.5rem;">
+                Klima-Pro — Serwis i Montaż Klimatyzacji Poznań
+              </h3>
+              <p style="font-size: 0.9rem; color: var(--text-muted); margin-bottom: 1.1rem;">
+                Automat samodzielnie zaprojektował jasną szatę graficzną HVAC, rozbudował opisy korzyści, przygotował tabelę cennika, sekcję FAQ oraz pełne dane strukturalne <code>Schema.org HVACBusiness</code> dla Google.
+              </p>
+              <ul class="feature-list" style="margin-bottom: 1.25rem; gap: 0.55rem;">
+                <li><span class="check">✓</span> <span>Sekcja Hero z przyciskiem szybkiego dzwonienia <code>+48 512 900 300</code></span></li>
+                <li><span class="check">✓</span> <span>6 kart usług + wyeksponowany certyfikat F-Gaz i obsługiwane marki</span></li>
+                <li><span class="check">✓</span> <span>Przejrzysty cennik pakietów + wygenerowane propozycje wolnych domen (<code>klimapro24.pl</code>, <code>klima-poznan24.pl</code>)</span></li>
+              </ul>
+            </div>
+
+            <a href="https://filipescu88.github.io/wizytowka-stefan-informatyk-a9ed8a/" target="_blank" rel="noopener" class="btn btn-primary" style="width: 100%;">
+              🔍 Otwórz tę wygenerowaną stronę na żywo ↗
+            </a>
+          </div>
+        </div>
+
+        <!-- Case Study 2: Volt-Tech + CMS Edit -->
+        <div class="prompt-showcase-card">
+          <div class="prompt-box">
+            <div>
+              <div style="display: flex; align-items: center; justify-content: space-between; margin-bottom: 0.85rem;">
+                <span style="font-size: 0.78rem; font-weight: 800; color: #34d399; text-transform: uppercase; letter-spacing: 0.05em;">
+                  💬 1. Co napisał klient + późniejsza poprawka na WhatsAppie:
+                </span>
+                <span style="font-size: 0.74rem; color: var(--text-muted); font-family: 'JetBrains Mono', monospace;">Prompt + Edycja CMS</span>
+              </div>
+              <div class="prompt-bubble">Cześć! Nazywam się Tomasz Nowak i prowadzę firmę „Volt-Tech Instalacje Elektryczne” we Wrocławiu i okolicach (do 30 km).
+- kompleksowe instalacje elektryczne w domach i mieszkaniach
+- montaż rozdzielnic, oświetlenia LED, pomiary SEP E i D
+- podłączanie płyt indukcyjnych z podbiciem gwarancji
+- pogotowie elektryczne i usuwanie awarii
+Cennik: punkt od 45 zł, płyta indukcyjna 150 zł, pomiary od 500 zł.
+Tel: +48 600 123 456 · ul. Legnicka 45, Wrocław
+Styl: ciemny granat z żółtymi/pomarańczowymi akcentami. <strong>START</strong></div>
+              <div class="prompt-bubble" style="margin-top: 0.65rem; background: #1f2937; border: 1px solid var(--border-accent);">
+                <strong style="color: #34d399;">+ Wiadomość dosłana chwilę po wygenerowaniu:</strong><br />
+                „Zmień proszę numer telefonu w nagłówku na +48 777 888 999 oraz dopisz na górze strony informację: Dojazd na terenie Wrocławia 0 zł!”
+              </div>
+            </div>
+            <div style="margin-top: 0.9rem; font-size: 0.78rem; color: #94a3b8; display: flex; justify-content: space-between; align-items: center;">
+              <span>✓ Poprawka wdrożona w 4.2 sekundy</span>
+              <span style="color: #34d399; font-weight: 700;">Kontener CMS zaktualizował kod</span>
+            </div>
+          </div>
+
+          <div class="realization-box">
+            <div>
+              <div style="display: flex; align-items: center; justify-content: space-between; margin-bottom: 0.85rem; flex-wrap: wrap; gap: 0.5rem;">
+                <span style="font-size: 0.78rem; font-weight: 800; color: #22d3ee; text-transform: uppercase; letter-spacing: 0.05em;">
+                  🌐 2. Gotowa strona po automatycznej poprawce (Realizacja):
+                </span>
+                <span class="lh-badge">⚡ Ciemny motyw + Edycja Live</span>
+              </div>
+              <h3 style="font-size: 1.35rem; font-weight: 800; margin-bottom: 0.5rem;">
+                Volt-Tech — Elektryk Wrocław (Uprawnienia SEP)
+              </h3>
+              <p style="font-size: 0.9rem; color: var(--text-muted); margin-bottom: 1.1rem;">
+                Strona wygenerowana w ciemnym, kontrastowym motywie (granat + bursztyn), a następnie zaktualizowana jedną wiadomością na WhatsAppie — z dodanym banerem promocyjnym na samej górze oraz podmienionym numerem telefonu.
+              </p>
+              <ul class="feature-list" style="margin-bottom: 1.25rem; gap: 0.55rem;">
+                <li><span class="check">✓</span> <span>Widoczny na samej górze baner: <em>„Dojazd na terenie Wrocławia 0 zł!”</em> (dodany przez WhatsApp CMS)</span></li>
+                <li><span class="check">✓</span> <span>Zaktualizowany numer telefonu <code>+48 777 888 999</code> we wszystkich przyciskach CTA</span></li>
+                <li><span class="check">✓</span> <span>Sekcja pogotowia elektrycznego, tabela cenowa i lokalne SEO dla Wrocławia</span></li>
+              </ul>
+            </div>
+
+            <a href="https://filipescu88.github.io/wizytowka-beata-krzeminska-a94f11/" target="_blank" rel="noopener" class="btn btn-outline" style="width: 100%; border-color: var(--emerald); color: #34d399;">
+              🔍 Otwórz stronę Volt-Tech po edycji na żywo ↗
+            </a>
           </div>
         </div>
       </div>
@@ -1048,9 +1268,9 @@
   <section id="cennik">
     <div class="container">
       <div class="section-head">
-        <span class="section-tag">Przejrzysty Cennik</span>
+        <span class="section-tag">Przejrzysty Cennik · Szybka Płatność BLIK</span>
         <h2>Jedna uczciwa cena. Zero ukrytych kosztów.</h2>
-        <p>Wybierz samą stronę-wizytówkę „Pod Klucz” lub dodaj opcjonalny pakiet nielimitowanej opieki CMS przez WhatsApp i E-mail.</p>
+        <p>Wybierz samą stronę-wizytówkę „Pod Klucz” lub dodaj opcjonalny pakiet nielimitowanej opieki CMS przez WhatsApp i E-mail. Zapłacisz wygodnie <strong>BLIK-iem</strong>, kartą, Apple Pay lub Google Pay.</p>
       </div>
 
       <div class="pricing-grid">
@@ -1063,21 +1283,23 @@
               <span class="price-num">399</span>
               <span class="price-curr">zł brutto (jednorazowo)</span>
             </div>
-            <p class="price-note">Brak obowiązkowego abonamentu. Płacisz raz i strona działa przez cały rok.</p>
+            <p class="price-note">Brak obowiązkowego abonamentu. Płacisz raz (BLIK / Karta) i strona działa przez cały rok.</p>
 
             <ul class="feature-list">
               <li><span class="check">✓</span> <span><strong>Domena .pl na 1. rok w cenie</strong> (automatyczna rejestracja z naszej puli)</span></li>
               <li><span class="check">✓</span> <span><strong>Szybki hosting + certyfikat SSL (HTTPS)</strong> bez opłat miesięcznych</span></li>
               <li><span class="check">✓</span> <span><strong>Nielimitowane poprawki wersji roboczej</strong> przed akceptacją i wyborem domeny</span></li>
               <li><span class="check">✓</span> <span><strong>48 godzin okna gwarancyjnego</strong> po publikacji na bezpłatne korekty startowe</span></li>
-              <li><span class="check">✓</span> <span>Optymalizacja SEO (Schema.org LocalBusiness, mapa сайта, szybkość 99/100)</span></li>
+              <li><span class="check">✓</span> <span>Optymalizacja SEO (Schema.org LocalBusiness, mapa strony, szybkość 99/100)</span></li>
               <li><span class="check">✓</span> <span>Galeria zdjęć WebP, cennik, sekcja FAQ i szybki kontakt telefoniczny</span></li>
             </ul>
           </div>
 
-          <a href="https://warsztatcyfrowy.pl/#uslugi" class="btn btn-outline" style="width: 100%;">
-            Zamów pakiet za 399 zł na WarsztatCyfrowy.pl →
-          </a>
+          <div>
+            <a href="https://warsztatcyfrowy.pl/#uslugi" class="btn btn-outline" style="width: 100%;">
+              Zamów pakiet za 399 zł (BLIK / Karta) →
+            </a>
+          </div>
         </div>
 
         <!-- Plan 2 (Featured) -->
@@ -1102,9 +1324,11 @@
             </ul>
           </div>
 
-          <a href="https://warsztatcyfrowy.pl/#uslugi" class="btn btn-primary" style="width: 100%;">
-            🚀 Zamów z Pakietem Opieki na WarsztatCyfrowy.pl →
-          </a>
+          <div>
+            <a href="https://warsztatcyfrowy.pl/#uslugi" class="btn btn-primary" style="width: 100%;">
+              🚀 Zamów z Pakietem Opieki na WarsztatCyfrowy.pl →
+            </a>
+          </div>
         </div>
       </div>
     </div>
@@ -1131,7 +1355,7 @@
           <tbody>
             <tr>
               <td><strong>Koszt uruchomienia</strong></td>
-              <td class="highlight-col">399 zł (z domeną .pl w cenie)</td>
+              <td class="highlight-col">399 zł (z domeną .pl w cenie, płatność BLIK)</td>
               <td>2 500 – 6 000 zł</td>
               <td>0 zł + kilkanaście godzin Twojej pracy</td>
             </tr>
@@ -1159,52 +1383,6 @@
     </div>
   </section>
 
-  <!-- Live Examples -->
-  <section id="przyklady">
-    <div class="container">
-      <div class="section-head">
-        <span class="section-tag">Zobacz Na Żywo</span>
-        <h2>Przykładowe strony wygenerowane z wiadomości WhatsApp</h2>
-        <p>Każda strona powstaje indywidualnie pod branżę klienta — z lokalnym SEO, cennikiem i wyeksponowanym przyciskiem telefonu.</p>
-      </div>
-
-      <div class="examples-grid">
-        <div class="example-card">
-          <div>
-            <span style="font-size: 0.76rem; color: var(--emerald); font-weight: 700; text-transform: uppercase;">Branża HVAC / Instalacje</span>
-            <h3 style="margin: 0.35rem 0 0.5rem;">KlimaPro — Serwis i Montaż Klimatyzacji</h3>
-            <p style="font-size: 0.88rem; color: var(--text-muted);">Wygenerowana w 3 minuty z pojedynczej wiadomości tekstowej na WhatsAppie. Zawiera cennik usług, certyfikaty F-Gaz oraz szybki kontakt.</p>
-          </div>
-          <a href="https://filipescu88.github.io/wizytowka-stefan-informatyk-a9ed8a/" target="_blank" rel="noopener" class="btn btn-outline btn-sm">
-            Zobacz stronę na żywo ↗
-          </a>
-        </div>
-
-        <div class="example-card">
-          <div>
-            <span style="font-size: 0.76rem; color: var(--emerald); font-weight: 700; text-transform: uppercase;">Branża Usługowa / Serwis</span>
-            <h3 style="margin: 0.35rem 0 0.5rem;">Kowalczyk Instalacje — Pogotowie 24/7</h3>
-            <p style="font-size: 0.88rem; color: var(--text-muted);">Strona z sekcją usług awaryjnych, cennikiem, opiniami klientów oraz edycją w czasie rzeczywistym przez kontener CMS.</p>
-          </div>
-          <a href="https://filipescu88.github.io/wizytowka-jan-testowy-b4fb30/" target="_blank" rel="noopener" class="btn btn-outline btn-sm">
-            Zobacz stronę na żywo ↗
-          </a>
-        </div>
-
-        <div class="example-card">
-          <div>
-            <span style="font-size: 0.76rem; color: var(--cyan); font-weight: 700; text-transform: uppercase;">Strona Główna & Płatności</span>
-            <h3 style="margin: 0.35rem 0 0.5rem;">Warsztat Cyfrowy — Wszystkie realizacje</h3>
-            <p style="font-size: 0.88rem; color: var(--text-muted);">Przejdź na główną stronę Warsztatu Cyfrowego, zobacz więcej wdrożeń i uruchom kreator zamówienia z bezpieczną płatnością Stripe.</p>
-          </div>
-          <a href="https://warsztatcyfrowy.pl/#realizacje" class="btn btn-primary btn-sm">
-            Przejdź do WarsztatCyfrowy.pl →
-          </a>
-        </div>
-      </div>
-    </div>
-  </section>
-
   <!-- FAQ Section -->
   <section id="faq">
     <div class="container">
@@ -1226,21 +1404,21 @@
 
         <details class="faq-item">
           <summary>
-            <span>Co daje subskrypcja Opieki za 29 zł/mies. i czy jest obowiązkowa?</span>
+            <span>Jak mogę zapłacić za zamówienie? Czy działa płatność BLIK?</span>
             <span style="color: var(--emerald);">+</span>
           </summary>
           <p>
-            Subskrypcja jest całkowicie opcjonalna. Jeśli ją wybierzesz (lub włączysz w przyszłości), możesz przez cały rok w dowolnym momencie wysłać wiadomość na WhatsAppie (np. <em>„zmień cennik na zimowy”</em>, <em>„dodaj nowe zdjęcie z realizacji”</em>), a nasz automat wdroży zmianę na stronie w około 4 sekundy.
+            Tak! Płatności obsługuje certyfikowany operator <strong>Stripe</strong>. Jednym kliknięciem zapłacisz kodem <strong>BLIK</strong>, kartą płatniczą (Visa / Mastercard), Apple Pay lub Google Pay. Zaraz po zatwierdzeniu transakcji automat wysyła powitanie na Twój numer WhatsApp i e-mail.
           </p>
         </details>
 
         <details class="faq-item">
           <summary>
-            <span>Co jeśli w trakcie generowania strony przypomnę sobie o jeszcze jednym zdjęciu?</span>
+            <span>Co daje subskrypcja Opieki za 29 zł/mies. i czy jest obowiązkowa?</span>
             <span style="color: var(--emerald);">+</span>
           </summary>
           <p>
-            Nic nie szkodzi! Nasz system posiada dwupasmową kolejkę i inteligentny klasyfikator wiadomości. Jeśli doślesz zdjęcie w trakcie budowy strony, zostanie ono bezpiecznie zapisane w Twojej teczce, a po kilkudziesięciu sekundach — gdy pierwsza wersja się wygeneruje — od razu naniesiemy je na stronę.
+            Subskrypcja jest całkowicie opcjonalna. Jeśli ją wybierzesz (lub włączysz w przyszłości), możesz przez cały rok w dowolnym momencie wysłać wiadomość na WhatsAppie (np. <em>„zmień cennik na zimowy”</em>, <em>„dodaj nowe zdjęcie z realizacji”</em>), a nasz automat wdroży zmianę na stronie w około 4 sekundy.
           </p>
         </details>
 
@@ -1263,11 +1441,11 @@
       <h2 style="font-size: clamp(1.7rem, 3vw, 2.4rem); font-weight: 900; margin-bottom: 0.75rem;">
         Gotowy na własną stronę firmową w 5 minut?
       </h2>
-      <p style="color: var(--text-muted); max-width: 620px; margin: 0 auto 1.75rem; font-size: 1.05rem;">
-        Kliknij poniżej, przejdź do formularza zamówienia na <strong>WarsztatCyfrowy.pl</strong> i odbierz wiadomość powitalną na swoim WhatsAppie!
+      <p style="color: var(--text-muted); max-width: 620px; margin: 0 auto 1.5rem; font-size: 1.05rem;">
+        Kliknij poniżej, opłać zamówienie wygodnie <strong>BLIK-iem</strong> lub kartą na <strong>WarsztatCyfrowy.pl</strong> i odbierz wiadomość powitalną na swoim WhatsAppie!
       </p>
       <a href="https://warsztatcyfrowy.pl/#uslugi" class="btn btn-primary" style="font-size: 1.08rem; padding: 1rem 2rem;">
-        🚀 Przejdź do zamówienia na WarsztatCyfrowy.pl (399 zł) →
+        🚀 Zamów za 399 zł na WarsztatCyfrowy.pl (BLIK / Karta) →
       </a>
     </div>
   </div>
