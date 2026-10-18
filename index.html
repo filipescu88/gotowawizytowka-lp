@@ -1429,10 +1429,10 @@
           <div>
             <span class="mode-icon">🚀 1.&nbsp;Nowa strona od&nbsp;zera</span>
             <h3 style="font-size: 1.2rem; font-weight: 800; margin: 0.75rem 0 0.45rem;">
-              Nie&nbsp;masz jeszcze strony? Wyślij opis i&nbsp;zdjęcia z&nbsp;telefonu
+              Nie&nbsp;masz jeszcze strony ani&nbsp;zdjęć? Wyślij sam opis z&nbsp;telefonu
             </h3>
             <p style="font-size: 0.88rem; color: var(--text-muted); margin-bottom: 0.5rem;">
-              Wystarczy kilka zdań na&nbsp;WhatsAppie. Automat stworzy nowoczesną szatę graficzną, dopisze teksty sprzedażowe, zoptymalizuje zdjęcia/wideo i&nbsp;zarejestruje wolną domenę&nbsp;<code>.pl</code> z&nbsp;certyfikatem SSL.
+              Wystarczy kilka zdań na&nbsp;WhatsAppie. Automat stworzy nowoczesną szatę graficzną, dopisze teksty sprzedażowe, zoptymalizuje Twoje zdjęcia/wideo (lub&nbsp;wygeneruje dedykowane fotografie AI na&nbsp;życzenie!) i&nbsp;zarejestruje wolną domenę&nbsp;<code>.pl</code> z&nbsp;certyfikatem SSL.
             </p>
           </div>
           <a href="#zamow-strone" data-select-goal="new_site" style="padding-top: 0.75rem; border-top: 1px solid var(--border); font-size: 0.84rem; color: #34d399; font-weight: 700; text-decoration: none; display: block;">
@@ -1530,7 +1530,7 @@ Styl strony: jasny, świeży (biel, chłodny błękit i&nbsp;grafit). <strong>ST
               </ul>
             </div>
 
-            <a href="https://filipescu88.github.io/wizytowka-stefan-informatyk-a9ed8a/" target="_blank" rel="noopener" class="btn btn-primary" style="width: 100%;">
+            <a href="https://filipescu88.github.io/demo-klima-pro-poznan/" target="_blank" rel="noopener" class="btn btn-primary" style="width: 100%;">
               🔍 Otwórz tę wygenerowaną stronę na&nbsp;żywo&nbsp;↗
             </a>
           </div>
@@ -1561,7 +1561,7 @@ Styl strony: jasny, świeży (biel, chłodny błękit i&nbsp;grafit). <strong>ST
             <p class="price-note">Brak obowiązkowego abonamentu (0&nbsp;zł/mies.). Płacisz raz i&nbsp;strona działa przez&nbsp;cały rok.</p>
 
             <ul class="feature-list">
-              <li><span class="check">✓</span> <span><strong>Nowa strona z&nbsp;opisu LUB&nbsp;pobranie treści i&nbsp;zdjęć z&nbsp;Twojej starej witryny</strong></span></li>
+              <li><span class="check">✓</span> <span><strong>Nowa strona z&nbsp;opisu (własne zdjęcia lub&nbsp;generowanie grafik AI w&nbsp;cenie!) LUB&nbsp;odświeżenie Twojej starej witryny</strong></span></li>
               <li><span class="check">✓</span> <span><strong>Domena&nbsp;<code>.pl</code> na&nbsp;1.&nbsp;rok w&nbsp;cenie</strong>, przepięcie własnego DNS lub&nbsp;paczka kodu <strong>.ZIP</strong></span></li>
               <li><span class="check">✓</span> <span><strong>Szybki hosting + certyfikat SSL</strong> oraz&nbsp;optymalizacja SEO (Google Speed 99/100)</span></li>
               <li><span class="check">✓</span> <span><strong>Nielimitowane poprawki wersji roboczej</strong> + 48h gwarancji po&nbsp;starcie</span></li>
@@ -1692,7 +1692,7 @@ Styl strony: jasny, świeży (biel, chłodny błękit i&nbsp;grafit). <strong>ST
             <div class="order-step-title"><span class="order-step-badge">Krok 4</span> Twoje dane do&nbsp;kontaktu (WhatsApp i&nbsp;e-mail)</div>
             <div class="order-input-group">
               <label for="ord-name">Imię i&nbsp;nazwisko lub&nbsp;nazwa firmy *</label>
-              <input type="text" id="ord-name" name="name" required maxlength="120" placeholder="np. Jan Kowalski — Usługi Stolarskie" class="order-input">
+              <input type="text" id="ord-name" name="client_name" required maxlength="120" placeholder="np. Jan Kowalski — Usługi Stolarskie" class="order-input">
             </div>
 
             <div class="order-contact-grid">
@@ -1854,7 +1854,7 @@ Styl strony: jasny, świeży (biel, chłodny błękit i&nbsp;grafit). <strong>ST
           if (stdCard) stdCard.classList.add('is-selected');
           if (cmsCard) cmsCard.classList.remove('is-selected');
           if (submitBtn && !submitBtn.disabled) {
-            submitBtn.textContent = '🚀 Zamów i opłać 399 zł (BLIK / Karta) →';
+            submitBtn.textContent = '🚀 Zamów i\u00a0opłać 399\u00a0zł (BLIK / Karta)\u00a0→';
           }
         }
       }
@@ -1864,16 +1864,16 @@ Styl strony: jasny, świeży (biel, chłodny błękit i&nbsp;grafit). <strong>ST
         var delivery = deliverySelect.value;
         if (delivery === 'own_domain_dns') {
           domainLabel.textContent = 'Wpisz nazwę swojej domeny, którą już posiadasz (opcjonalnie)';
-          domainInput.placeholder = 'np. moja-firma.pl (lub podasz później na WhatsAppie)';
-          domainHint.innerHTML = 'Twoja domena zostaje u Twojego operatora. Po zbudowaniu strony wyślemy Ci prostą instrukcję podpięcia DNS.';
+          domainInput.placeholder = 'np.\u00a0moja-firma.pl (lub\u00a0podasz później na\u00a0WhatsAppie)';
+          domainHint.innerHTML = 'Twoja domena zostaje u&nbsp;Twojego operatora. Po&nbsp;zbudowaniu strony wyślemy Ci prostą instrukcję podpięcia DNS.';
         } else if (delivery === 'zip_code') {
           domainLabel.textContent = 'Twoja domena docelowa (opcjonalnie)';
-          domainInput.placeholder = 'np. twojadomena.pl (opcjonalnie)';
-          domainHint.innerHTML = 'Po akceptacji projektu wyślemy Ci kompletną paczkę plików HTML/CSS/JS (<code>.ZIP</code>) na e-mail i WhatsApp.';
+          domainInput.placeholder = 'np.\u00a0twojadomena.pl (opcjonalnie)';
+          domainHint.innerHTML = 'Po&nbsp;akceptacji projektu wyślemy Ci kompletną paczkę plików HTML/CSS/JS (<code>.ZIP</code>) na&nbsp;e-mail i&nbsp;WhatsApp.';
         } else {
-          domainLabel.textContent = 'Wymarzona nazwa nowej domeny .pl (opcjonalnie — możesz zostawić puste)';
-          domainInput.placeholder = 'np. stolarstwo-kowalski.pl (lub zostaw puste)';
-          domainHint.innerHTML = 'Jeśli zostawisz puste — nasz asystent sam wymyśli i sprawdzi dla Ciebie 5 wolnych domen <code>.pl</code> na WhatsAppie!';
+          domainLabel.textContent = 'Wymarzona nazwa nowej domeny .pl (opcjonalnie\u00a0— możesz zostawić puste)';
+          domainInput.placeholder = 'np.\u00a0stolarstwo-kowalski.pl (lub\u00a0zostaw puste)';
+          domainHint.innerHTML = 'Jeśli zostawisz puste&nbsp;— nasz asystent sam wymyśli i&nbsp;sprawdzi dla&nbsp;Ciebie 5&nbsp;wolnych domen <code>.pl</code> na&nbsp;WhatsAppie!';
         }
       }
 
@@ -1942,16 +1942,28 @@ Styl strony: jasny, świeży (biel, chłodny błękit i&nbsp;grafit). <strong>ST
       }
 
       if (params.get('order') === 'success' && bannerEl) {
-        var sid = params.get('session_id') || '';
+        var sid = params.get('session_id') || params.get('order_id') || '';
         bannerEl.hidden = false;
-        bannerEl.innerHTML = '🎉 <strong>Płatność przyjęta!</strong> Twój dedykowany opiekun AI właśnie wysyła powitanie na Twój <strong>WhatsApp</strong> oraz <strong>E-mail</strong>. Odpisz na wiadomość, aby rozpocząć budowę strony!';
+        bannerEl.innerHTML = '🎉 <strong>Płatność przyjęta!</strong> Twój dedykowany opiekun AI właśnie wysyła powitanie na&nbsp;Twój <strong>WhatsApp</strong> oraz&nbsp;<strong>E-mail</strong>. Odpisz na&nbsp;wiadomość, aby rozpocząć budowę strony!';
         if (sid) {
-          fetch(apiBase + '/api/order-status/' + encodeURIComponent(sid))
+          fetch(apiBase + '/api/orders/' + encodeURIComponent(sid))
             .then(function (r) { return r.ok ? r.json() : null; })
-            .then(function (info) {
-              if (info && info.order_id) {
-                bannerEl.innerHTML = '🎉 <strong>Zamówienie #' + info.order_id + ' opłacone!</strong> Sprawdź swój <strong>WhatsApp</strong> (' + (info.phone || '') + ') lub <strong>E-mail</strong> (' + (info.email || '') + ') — nasz automat już tam na Ciebie czeka!';
-              }
+            .then(function (ord) {
+              if (!ord || !ord.order_id) return;
+              var statusMap = {
+                PAID_NEW: 'Płatność potwierdzona — asystent AI wysyła wiadomość powitalną',
+                AWAITING_CONTENT: 'Oczekiwanie na materiały (sprawdź WhatsApp lub e-mail i wyślij tekst/zdjęcia lub napisz START)',
+                COLLECTING_CONTENT: 'Odbieranie materiałów — napisz START na WhatsAppie lub mailowo, gdy prześlesz wszystko',
+                BUILDING: 'Budowanie strony w toku',
+                AWAITING_DOMAIN_APPROVAL: 'Projekt gotowy! Sprawdź link roboczy na WhatsAppie i wybierz domenę / odbiór',
+                COMPLETED: 'Strona gotowa i opublikowana!'
+              };
+              var humanStatus = statusMap[ord.status] || ord.status;
+              bannerEl.innerHTML =
+                '🎉 <strong>Zamówienie #' + ord.order_id + ' aktywne!</strong> ' +
+                humanStatus + '. Wysłaliśmy instrukcję na&nbsp;Twój numer <strong>WhatsApp</strong> (<code>' +
+                (ord.phone_masked || '') + '</code>) oraz&nbsp;<strong>E-mail</strong> (<code>' +
+                (ord.email_masked || '') + '</code>).';
             })
             .catch(function () {});
         }
@@ -1965,8 +1977,9 @@ Styl strony: jasny, świeży (biel, chłodny błękit i&nbsp;grafit). <strong>ST
           var rawPhone = (fd.get('phone') || '').toString();
           var normalizedPhone = normalizePolishPhone(rawPhone);
           if (!normalizedPhone) {
-            errEl.textContent = 'Podaj poprawny 9-cyfrowy numer telefonu (np. 500 600 700 lub +48 500 600 700).';
+            errEl.textContent = 'Podaj prawidłowy 9-cyfrowy numer telefonu (np. 500 600 700 lub +48 500 600 700).';
             errEl.style.display = 'block';
+            if (phoneInput) phoneInput.focus();
             return;
           }
           if (phoneInput) {
@@ -1975,17 +1988,27 @@ Styl strony: jasny, świeży (biel, chłodny błękit i&nbsp;grafit). <strong>ST
 
           var origText = submitBtn.textContent;
           submitBtn.disabled = true;
-          submitBtn.textContent = '⏳ Przekierowanie do bezpiecznej płatności Stripe...';
+          submitBtn.textContent = 'Przekierowanie do płatności (BLIK / Karta)…';
+
+          var goalVal = (fd.get('order_goal') || 'new_site').toString();
+          var pkgVal = (fd.get('package') || 'standard').toString();
+          var deliveryVal = (fd.get('delivery_mode') || 'new_pl').toString();
+          var existingUrlVal = (fd.get('existing_site_url') || '').toString().trim();
+          var domainVal = (fd.get('domain_preferred') || '').toString().trim();
+
+          if (goalVal === 'redesign' && !existingUrlVal && domainVal) {
+            existingUrlVal = domainVal;
+          }
 
           var payload = {
-            name: (fd.get('name') || '').toString().trim(),
+            client_name: (fd.get('client_name') || fd.get('name') || '').toString().trim(),
             phone: normalizedPhone,
             email: (fd.get('email') || '').toString().trim(),
-            domain_preferred: (fd.get('domain_preferred') || '').toString().trim(),
-            package: (fd.get('package') || 'standard').toString(),
-            order_goal: (fd.get('order_goal') || 'new_site').toString(),
-            existing_site_url: (fd.get('existing_site_url') || '').toString().trim(),
-            delivery_mode: (fd.get('delivery_mode') || 'new_pl').toString(),
+            domain_preferred: domainVal || null,
+            order_goal: goalVal,
+            existing_site_url: existingUrlVal || null,
+            delivery_mode: deliveryVal,
+            with_cms_subscription: pkgVal === 'with_cms',
             return_path: window.location.pathname && window.location.pathname.indexOf('/oferta') === 0 ? '/oferta/' : '/'
           };
 
@@ -1997,11 +2020,11 @@ Styl strony: jasny, świeży (biel, chłodny błękit i&nbsp;grafit). <strong>ST
             });
             var data = await res.json();
             if (!res.ok || !data.checkout_url) {
-              throw new Error(data.detail || 'Nie udało się utworzyć sesji płatności. Sprawdź poprawność danych.');
+              throw new Error((data && data.detail) || 'Nie udało się utworzyć sesji płatności.');
             }
             window.location.href = data.checkout_url;
           } catch (err) {
-            errEl.textContent = err.message || 'Wystąpił błąd połączenia. Spróbuj ponownie.';
+            errEl.textContent = err.message || 'Błąd połączenia z bramką płatności.';
             errEl.style.display = 'block';
             submitBtn.disabled = false;
             submitBtn.textContent = origText;
