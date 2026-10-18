@@ -1242,7 +1242,7 @@
               Masz starą stronę WWW? Podaj nam tylko jej adres!
             </h3>
             <p style="font-size: 0.9rem; color: var(--text-muted); margin-bottom: 1rem;">
-              Nie musisz przepisywać oferty ani szukać zdjęć! Podajesz na WhatsAppie np. <code>www.moja-stara-strona.pl</code>. Nasz agent sam pobierze z niej teksty, cennik, kontakt i zdjęcia, zachowa Twoje słowa kluczowe SEO i zbuduje ultraszybką wersję 2026.
+              Nie musisz przepisywać oferty ani szukać zdjęć! Podajesz na WhatsAppie np. <code>www.moja-stara-strona.pl</code>. Nasz agent sam pobierze z niej teksty, cennik, kontakt i zdjęcia, zachowa Twoje słowa kluczowe SEO i zbuduje nowoczesną, ultraszybką wersję.
             </p>
             <ul class="feature-list" style="margin-bottom: 0; gap: 0.5rem;">
               <li><span class="check">✓</span> <span><strong>Zero pisania od zera</strong> — automat sam pobiera treść i zdjęcia ze starej witryny</span></li>
@@ -1439,7 +1439,7 @@ Styl: ciemny granat z żółtymi/pomarańczowymi akcentami. <strong>START</stron
             <span class="sim-btn-text">„Wrzuć na bloga i do realizacji: Montaż klimatyzacji Multisplit 2x 3.5kW w kamienicy na Jeżycach w Poznaniu, czas prac 6h + załączam zdjęcie”</span>
           </button>
 
-          <button type="button" class="sim-btn" data-title="Odświeżona Strona 2026: pobrano 100% tekstów i zdjęć ze starej witryny" data-sub="🔄 Zachowano pozycje SEO w Google · Gotowa do przepięcia DNS lub pobrania paczki .ZIP" data-badge="⚡ Redesign ze starego adresu URL (Google Speed: 99/100)" data-time="Pobrano starą stronę i wygenerowano nową wersję">
+          <button type="button" class="sim-btn" data-title="Odświeżona Strona WWW: pobrano 100% tekstów i zdjęć ze starej witryny" data-sub="🔄 Zachowano pozycje SEO w Google · Gotowa do przepięcia DNS lub pobrania paczki .ZIP" data-badge="⚡ Redesign ze starego adresu URL (Google Speed: 99/100)" data-time="Pobrano starą stronę i wygenerowano nową wersję">
             <span class="sim-btn-label">Wiadomość na WhatsApp #5 (Odświeżenie starej strony po samym linku URL)</span>
             <span class="sim-btn-text">„Moja obecna strona to www.stary-serwis-poznan.pl — pobierzcie z niej ofertę i zdjęcia i przygotujcie nowoczesną wersję. START”</span>
           </button>
@@ -1609,7 +1609,7 @@ Styl: ciemny granat z żółtymi/pomarańczowymi akcentami. <strong>START</stron
             <span style="color: var(--emerald);">+</span>
           </summary>
           <p>
-            To najprostszy możliwy proces! Po zamówieniu wysyłasz nam na WhatsAppie tylko adres swojej obecnej strony (np. <code>www.moja-firma.pl</code>) i słowo <strong>START</strong>. Nasz agent automatycznie odwiedza Twoją starą witrynę, pobiera z niej teksty, ofertę, cennik, dane kontaktowe, meta-tagi SEO oraz zdjęcia, a następnie buduje nowoczesną, responsywną wersję 2026. Na koniec możesz <strong>przepiąć DNS swojej obecnej domeny</strong> na nasz darmowy hosting z SSL albo napisać <strong>ZIP</strong> i odebrać gotową paczkę kodu na własny serwer!
+            To najprostszy możliwy proces! Po zamówieniu wysyłasz nam na WhatsAppie tylko adres swojej obecnej strony (np. <code>www.moja-firma.pl</code>) i słowo <strong>START</strong>. Nasz agent automatycznie odwiedza Twoją starą witrynę, pobiera z niej teksty, ofertę, cennik, dane kontaktowe, meta-tagi SEO oraz zdjęcia, a następnie buduje nowoczesną, szybką i responsywną wersję. Na koniec możesz <strong>przepiąć DNS swojej obecnej domeny</strong> na nasz darmowy hosting z SSL albo napisać <strong>ZIP</strong> i odebrać gotową paczkę kodu na własny serwer!
           </p>
         </details>
 
@@ -1673,12 +1673,15 @@ Styl: ciemny granat z żółtymi/pomarańczowymi akcentami. <strong>START</stron
 
   <footer>
     <div class="container">
-      <p>© 2026 <a href="https://warsztatcyfrowy.pl" style="color: var(--emerald); text-decoration: none; font-weight: 600;">Warsztat Cyfrowy</a> · Automatyczne Strony-Wizytówki WWW z obsługą przez WhatsApp i E-mail.</p>
+      <p>© <span id="current-year"></span> <a href="https://warsztatcyfrowy.pl" style="color: var(--emerald); text-decoration: none; font-weight: 600;">Warsztat Cyfrowy</a> · Automatyczne Strony-Wizytówki WWW z obsługą przez WhatsApp i E-mail.</p>
     </div>
   </footer>
 
   <script>
     (function () {
+      var yearEl = document.getElementById('current-year');
+      if (yearEl) yearEl.textContent = String(new Date().getFullYear());
+
       var btns = document.querySelectorAll('.sim-btn');
       var titleEl = document.getElementById('sim-title');
       var subEl = document.getElementById('sim-sub');
