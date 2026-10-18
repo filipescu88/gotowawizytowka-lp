@@ -6,13 +6,13 @@
   <title>Gotowa Strona-Wizytówka .pl w 5 Minut z WhatsAppa — 399 zł | Warsztat Cyfrowy</title>
   <meta name="description" content="Zamów profesjonalną stronę internetową z domeną .pl i certyfikatem SSL za 399 zł. Wyślij opis firmy i zdjęcia na WhatsApp lub e-mail, napisz START i odbierz gotową stronę!" />
   <meta name="robots" content="index, follow" />
-  <link rel="canonical" href="https://filipescu88.github.io/gotowawizytowka-lp/" />
+  <link rel="canonical" href="https://warsztatcyfrowy.pl/oferta/" />
 
   <!-- Open Graph / Social / Ads Preview -->
   <meta property="og:type" content="website" />
   <meta property="og:title" content="Strona Internetowa dla Firmy w 5 Minut przez WhatsApp — 399 zł" />
   <meta property="og:description" content="Bez agencji, bez kreatorów, bez czekania tygodniami. Wyślij zdjęcia i opis na WhatsAppie, dopracuj projekt bez limitu poprawek i odbierz stronę pod własną domeną .pl!" />
-  <meta property="og:url" content="https://filipescu88.github.io/gotowawizytowka-lp/" />
+  <meta property="og:url" content="https://warsztatcyfrowy.pl/oferta/" />
 
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -38,7 +38,7 @@
             "price": "399.00",
             "priceCurrency": "PLN",
             "availability": "https://schema.org/InStock",
-            "url": "https://warsztatcyfrowy.pl/#uslugi"
+            "url": "https://warsztatcyfrowy.pl/oferta/#zamow-strone"
           },
           {
             "@type": "Offer",
@@ -46,7 +46,7 @@
             "price": "29.00",
             "priceCurrency": "PLN",
             "availability": "https://schema.org/InStock",
-            "url": "https://warsztatcyfrowy.pl/#uslugi"
+            "url": "https://warsztatcyfrowy.pl/oferta/#zamow-strone"
           }
         ]
       },
@@ -993,6 +993,214 @@
         font-size: 0.82rem;
       }
     }
+
+    /* Embedded Order Form (#zamow-strone) — Dark Navy + Emerald */
+    .order-section {
+      padding: 4.5rem 0 5rem;
+      scroll-margin-top: 80px;
+    }
+    .order-card-wrap {
+      max-width: 820px;
+      margin: 0 auto;
+      background: linear-gradient(180deg, rgba(15, 23, 42, 0.96) 0%, rgba(7, 11, 20, 0.98) 100%);
+      border: 1.5px solid var(--border-accent);
+      border-radius: 26px;
+      padding: 2.5rem;
+      box-shadow: 0 24px 60px rgba(0, 0, 0, 0.55), 0 0 40px rgba(16, 185, 129, 0.12);
+    }
+    .order-banner {
+      max-width: 820px;
+      margin: 1.25rem auto 0;
+      padding: 1.25rem 1.5rem;
+      border-radius: 18px;
+      background: rgba(16, 185, 129, 0.14);
+      border: 1.5px solid var(--emerald);
+      color: var(--text-main);
+      box-shadow: 0 12px 32px rgba(16, 185, 129, 0.18);
+    }
+    .order-banner-head {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 0.5rem;
+      font-family: 'JetBrains Mono', monospace;
+      font-size: 0.82rem;
+      color: #34d399;
+      font-weight: 700;
+      margin-bottom: 0.45rem;
+    }
+    .order-step-block {
+      margin-bottom: 1.65rem;
+    }
+    .order-step-title {
+      display: flex;
+      align-items: center;
+      gap: 0.6rem;
+      font-size: 1rem;
+      font-weight: 800;
+      color: var(--text-main);
+      margin-bottom: 0.75rem;
+    }
+    .order-step-badge {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      background: rgba(16, 185, 129, 0.18);
+      border: 1px solid var(--border-accent);
+      color: #34d399;
+      font-family: 'JetBrains Mono', monospace;
+      font-size: 0.75rem;
+      font-weight: 700;
+      padding: 0.18rem 0.6rem;
+      border-radius: 999px;
+      text-transform: uppercase;
+    }
+    .order-choice-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 0.9rem;
+    }
+    .order-choice-card {
+      position: relative;
+      display: flex;
+      align-items: flex-start;
+      gap: 0.75rem;
+      padding: 1.1rem 1.15rem;
+      border-radius: 16px;
+      background: rgba(15, 23, 42, 0.75);
+      border: 1.5px solid var(--border);
+      cursor: pointer;
+      transition: all 0.18s ease;
+    }
+    .order-choice-card:hover {
+      border-color: rgba(16, 185, 129, 0.45);
+      background: rgba(19, 30, 54, 0.9);
+    }
+    .order-choice-card.is-selected {
+      border-color: var(--emerald);
+      background: rgba(16, 185, 129, 0.11);
+      box-shadow: 0 0 24px rgba(16, 185, 129, 0.14);
+    }
+    .order-choice-card input[type="radio"] {
+      margin-top: 0.25rem;
+      accent-color: var(--emerald);
+      width: 18px;
+      height: 18px;
+      flex-shrink: 0;
+    }
+    .order-choice-body {
+      display: flex;
+      flex-direction: column;
+      gap: 0.25rem;
+      font-size: 0.86rem;
+      color: var(--text-muted);
+    }
+    .order-choice-body strong {
+      font-size: 0.98rem;
+      color: var(--text-main);
+      font-weight: 800;
+    }
+    .order-choice-price {
+      margin-top: 0.25rem;
+      font-family: 'JetBrains Mono', monospace;
+      font-size: 0.84rem;
+      font-weight: 700;
+      color: #34d399;
+    }
+    .order-input-group {
+      margin-bottom: 1.15rem;
+    }
+    .order-input-group label {
+      display: block;
+      font-size: 0.88rem;
+      font-weight: 700;
+      color: #e2e8f0;
+      margin-bottom: 0.42rem;
+    }
+    .order-input,
+    .order-select {
+      width: 100%;
+      padding: 0.85rem 1rem;
+      border-radius: 12px;
+      background: #070b14;
+      border: 1.5px solid rgba(148, 163, 184, 0.26);
+      color: var(--text-main);
+      font-family: inherit;
+      font-size: 0.96rem;
+      transition: border-color 0.15s ease, box-shadow 0.15s ease;
+    }
+    .order-input:focus,
+    .order-select:focus {
+      outline: none;
+      border-color: var(--emerald);
+      box-shadow: 0 0 0 3px rgba(16, 185, 129, 0.2);
+    }
+    .order-field-hint {
+      display: block;
+      margin-top: 0.38rem;
+      font-size: 0.8rem;
+      color: var(--text-muted);
+      line-height: 1.45;
+    }
+    .order-contact-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 1rem;
+    }
+    .order-steps-hint {
+      margin: 1.25rem 0;
+      padding: 1rem 1.15rem;
+      border-radius: 14px;
+      background: rgba(6, 182, 212, 0.08);
+      border: 1px solid rgba(6, 182, 212, 0.28);
+      font-size: 0.86rem;
+      color: #cbd5e1;
+      line-height: 1.55;
+    }
+    .order-error {
+      margin-bottom: 1rem;
+      padding: 0.85rem 1rem;
+      border-radius: 12px;
+      background: rgba(239, 68, 68, 0.15);
+      border: 1px solid rgba(239, 68, 68, 0.5);
+      color: #fca5a5;
+      font-size: 0.9rem;
+      font-weight: 600;
+    }
+    .order-submit-btn {
+      width: 100%;
+      padding: 1.05rem 1.5rem;
+      border: none;
+      border-radius: 14px;
+      background: linear-gradient(135deg, var(--emerald), var(--emerald-dark));
+      color: #03150e;
+      font-family: inherit;
+      font-size: 1.06rem;
+      font-weight: 900;
+      cursor: pointer;
+      box-shadow: 0 10px 30px rgba(16, 185, 129, 0.32);
+      transition: transform 0.15s ease, box-shadow 0.15s ease;
+    }
+    .order-submit-btn:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 14px 36px rgba(16, 185, 129, 0.45);
+    }
+    .order-submit-btn:disabled {
+      opacity: 0.65;
+      cursor: wait;
+      transform: none;
+    }
+    @media (max-width: 680px) {
+      .order-card-wrap {
+        padding: 1.35rem 1.1rem;
+        border-radius: 20px;
+      }
+      .order-choice-grid,
+      .order-contact-grid {
+        grid-template-columns: 1fr;
+      }
+    }
   </style>
 </head>
 <body>
@@ -1010,13 +1218,17 @@
         <a href="#przyklady">Prompt → Realizacja</a>
         <a href="#symulator">Edycja z telefonu</a>
         <a href="#cennik">Cennik (399 zł)</a>
-        <a href="#faq">FAQ</a>
+        <a href="#zamow-strone">Formularz zamówienia</a>
       </nav>
-      <a href="https://warsztatcyfrowy.pl/?zamow=1#zamow-strone" class="btn btn-primary btn-sm">
+      <a href="#zamow-strone" class="btn btn-primary btn-sm">
         Zamów za 399 zł (BLIK) →
       </a>
     </div>
   </header>
+
+  <div class="container">
+    <div class="order-banner" id="order-banner" hidden></div>
+  </div>
 
   <!-- Hero Section -->
   <section class="hero">
@@ -1034,8 +1246,8 @@
           Płacisz <strong>399 zł jednorazowo (BLIK / Karta)</strong>. Możesz wysłać opis i zdjęcia na WhatsAppie <strong>albo podać tylko adres swojej starej strony WWW</strong> — nasz agent sam pobierze z niej teksty i zdjęcia i przygotuje nową wersję! Gotową stronę odbierzesz z nową domeną <strong>.pl</strong>, przepniesz <strong>DNS obecnej domeny</strong> lub pobierzesz <strong>paczkę kodu .zip</strong>.
         </p>
         <div class="hero-ctas" style="margin-bottom: 0.85rem;">
-          <a href="https://warsztatcyfrowy.pl/?zamow=1#zamow-strone" class="btn btn-primary">
-            🚀 Otwórz formularz i zamów (399 zł · BLIK / Karta) →
+          <a href="#zamow-strone" class="btn btn-primary">
+            🚀 Przejdź do formularza i zamów (399 zł · BLIK / Karta) ↓
           </a>
           <a href="#przyklady" class="btn btn-outline">
             Zobacz Prompt → Gotowa strona ↓
@@ -1229,8 +1441,8 @@
               <li><span class="check">✓</span> <span>Pełne lokalne SEO (<code>Schema.org LocalBusiness</code>)</span></li>
             </ul>
           </div>
-          <a href="https://warsztatcyfrowy.pl/?zamow=1&amp;goal=new_site#zamow-strone" style="padding-top: 0.85rem; border-top: 1px solid var(--border); font-size: 0.84rem; color: #34d399; font-weight: 700; text-decoration: none; display: block;">
-            👉 Zamów nową stronę od zera (otwórz formularz) →
+          <a href="#zamow-strone" data-select-goal="new_site" style="padding-top: 0.85rem; border-top: 1px solid var(--border); font-size: 0.84rem; color: #34d399; font-weight: 700; text-decoration: none; display: block;">
+            👉 Zamów nową stronę od zera (wypełnij formularz poniżej) ↓
           </a>
         </div>
 
@@ -1250,8 +1462,8 @@
               <li><span class="check">✓</span> <span><strong>Lub odbierasz paczkę kodu .ZIP na życzenie</strong> do wgrania na własny serwer FTP!</span></li>
             </ul>
           </div>
-          <a href="https://warsztatcyfrowy.pl/?zamow=1&amp;goal=redesign#zamow-strone" style="padding-top: 0.85rem; border-top: 1px solid var(--border); font-size: 0.84rem; color: #22d3ee; font-weight: 700; text-decoration: none; display: block;">
-            👉 Odśwież starą stronę (wpisz adres w formularzu) →
+          <a href="#zamow-strone" data-select-goal="redesign" style="padding-top: 0.85rem; border-top: 1px solid var(--border); font-size: 0.84rem; color: #22d3ee; font-weight: 700; text-decoration: none; display: block;">
+            👉 Odśwież starą stronę (wpisz jej adres w formularzu poniżej) ↓
           </a>
         </div>
 
@@ -1271,8 +1483,8 @@
               <li><span class="check">✓</span> <span><strong>Menu Dnia / Ogłoszenia / Wolne terminy</strong> — codzienna aktualizacja z telefonu bez komputera</span></li>
             </ul>
           </div>
-          <a href="https://warsztatcyfrowy.pl/?zamow=1&amp;pkg=with_cms#zamow-strone" style="padding-top: 0.85rem; border-top: 1px solid var(--border); font-size: 0.84rem; color: #34d399; font-weight: 700; text-decoration: none; display: block;">
-            👉 Zamów stronę z Opieką WhatsApp &amp; Blogiem →
+          <a href="#zamow-strone" data-select-pkg="with_cms" style="padding-top: 0.85rem; border-top: 1px solid var(--border); font-size: 0.84rem; color: #34d399; font-weight: 700; text-decoration: none; display: block;">
+            👉 Zamów stronę z Opieką WhatsApp &amp; Blogiem ↓
           </a>
         </div>
       </div>
@@ -1468,7 +1680,7 @@ Styl: ciemny granat z żółtymi/pomarańczowymi akcentami. <strong>START</stron
 
           <div style="display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 0.75rem; padding-top: 1rem; border-top: 1px solid var(--border);">
             <span style="font-size: 0.8rem; color: var(--text-muted);">✓ Publikacja na domenie .pl, własnym DNS lub paczka kodu .ZIP</span>
-            <a href="https://warsztatcyfrowy.pl/?zamow=1#zamow-strone" class="btn btn-primary btn-sm">Wypróbuj na własnej stronie →</a>
+            <a href="#zamow-strone" class="btn btn-primary btn-sm">Wypróbuj na własnej stronie →</a>
           </div>
         </div>
       </div>
@@ -1507,8 +1719,8 @@ Styl: ciemny granat z żółtymi/pomarańczowymi akcentami. <strong>START</stron
           </div>
 
           <div>
-            <a href="https://warsztatcyfrowy.pl/?zamow=1&amp;pkg=standard#zamow-strone" class="btn btn-outline" style="width: 100%;">
-              Zamów pakiet za 399 zł (otwórz formularz) →
+            <a href="#zamow-strone" data-select-pkg="standard" class="btn btn-outline" style="width: 100%;">
+              Zamów pakiet za 399 zł (wypełnij poniżej) →
             </a>
           </div>
         </div>
@@ -1536,8 +1748,8 @@ Styl: ciemny granat z żółtymi/pomarańczowymi akcentami. <strong>START</stron
           </div>
 
           <div>
-            <a href="https://warsztatcyfrowy.pl/?zamow=1&amp;pkg=with_cms#zamow-strone" class="btn btn-primary" style="width: 100%;">
-              🚀 Zamów z Pakietem Opieki (otwórz formularz) →
+            <a href="#zamow-strone" data-select-pkg="with_cms" class="btn btn-primary" style="width: 100%;">
+              🚀 Zamów z Pakietem Opieki (wypełnij poniżej) →
             </a>
           </div>
         </div>
@@ -1609,7 +1821,7 @@ Styl: ciemny granat z żółtymi/pomarańczowymi akcentami. <strong>START</stron
             <span style="color: var(--emerald);">+</span>
           </summary>
           <p>
-            To najprostszy możliwy proces! W formularzu zamówienia na WarsztatCyfrowy.pl wybierasz opcję <strong>„Odświeżenie starej strony”</strong> i wpisujesz jej obecny adres (np. <code>www.moja-firma.pl</code>) — albo wysyłasz go później na WhatsAppie. Nasz agent automatycznie odwiedza Twoją starą witrynę, pobiera z niej teksty, ofertę, cennik, dane kontaktowe, meta-tagi SEO oraz zdjęcia, a następnie buduje nowoczesną, szybką i responsywną wersję. Na koniec możesz <strong>przepiąć DNS swojej obecnej domeny</strong> na nasz darmowy hosting z SSL albo napisać <strong>ZIP</strong> i odebrać gotową paczkę kodu na własny serwer!
+            To najprostszy możliwy proces! W formularzu zamówienia poniżej wybierasz opcję <strong>„Odświeżenie starej strony”</strong> i wpisujesz jej obecny adres (np. <code>www.moja-firma.pl</code>) — albo wysyłasz go później na WhatsAppie. Nasz agent automatycznie odwiedza Twoją starą witrynę, pobiera z niej teksty, ofertę, cennik, dane kontaktowe, meta-tagi SEO oraz zdjęcia, a następnie buduje nowoczesną, szybką i responsywną wersję. Na koniec możesz <strong>przepiąć DNS swojej obecnej domeny</strong> na nasz darmowy hosting z SSL albo napisać <strong>ZIP</strong> i odebrać gotową paczkę kodu na własny serwer!
           </p>
         </details>
 
@@ -1656,20 +1868,116 @@ Styl: ciemny granat z żółtymi/pomarańczowymi akcentami. <strong>START</stron
     </div>
   </section>
 
-  <!-- Bottom CTA Banner -->
-  <div class="container">
-    <div class="cta-banner">
-      <h2 style="font-size: clamp(1.7rem, 3vw, 2.4rem); font-weight: 900; margin-bottom: 0.75rem;">
-        Gotowy na własną stronę firmową w 5 minut?
-      </h2>
-      <p style="color: var(--text-muted); max-width: 620px; margin: 0 auto 1.5rem; font-size: 1.05rem;">
-        Kliknij poniżej — od razu otworzy się prosty formularz zamówienia na <strong>WarsztatCyfrowy.pl</strong>. Opłać zamówienie <strong>BLIK-iem</strong> lub kartą i odbierz powitanie na WhatsAppie!
-      </p>
-      <a href="https://warsztatcyfrowy.pl/?zamow=1#zamow-strone" class="btn btn-primary" style="font-size: 1.08rem; padding: 1rem 2rem;">
-        🚀 Otwórz formularz zamówienia (399 zł · BLIK / Karta) →
-      </a>
+  <!-- Interactive 4-Step Order Section (#zamow-strone) -->
+  <section class="order-section" id="zamow-strone">
+    <div class="container">
+      <div class="section-head" style="margin-bottom: 2.2rem;">
+        <span class="section-tag">Automatyczny Kreator Zamówienia · BLIK / Karta</span>
+        <h2>Zamów stronę „pod klucz” w 60 sekund</h2>
+        <p>Wypełnij poniższe 4 kroki i opłać zamówienie bezpiecznie przez Stripe (BLIK, Karta, Apple Pay / Google Pay). Zaraz po płatności nasz automat przywita Cię na WhatsAppie i e-mailu!</p>
+      </div>
+
+      <div class="order-card-wrap">
+        <form id="order-form">
+          <!-- Krok 1: Cel zamówienia -->
+          <div style="margin-bottom: 1.5rem;">
+            <label class="order-step-label">1. Czego potrzebujesz? *</label>
+            <div class="order-choice-grid">
+              <label class="order-choice-card active" id="goal-new-card">
+                <input type="radio" name="order_goal" value="new_site" checked style="margin-top:0.2rem; accent-color:var(--emerald);">
+                <div>
+                  <strong style="display:block; color:var(--text-main); font-size:0.95rem;">✨ Nowa strona od zera</strong>
+                  <span style="font-size:0.8rem; color:var(--text-muted); line-height:1.4; display:block; margin-top:0.2rem;">Nie mam jeszcze strony — wyślę krótki opis i zdjęcia na WhatsAppie lub e-mailu.</span>
+                </div>
+              </label>
+
+              <label class="order-choice-card" id="goal-redesign-card">
+                <input type="radio" name="order_goal" value="redesign" style="margin-top:0.2rem; accent-color:var(--emerald);">
+                <div>
+                  <strong style="display:block; color:var(--text-main); font-size:0.95rem;">🔄 Odświeżenie starej strony</strong>
+                  <span style="font-size:0.8rem; color:var(--text-muted); line-height:1.4; display:block; margin-top:0.2rem;">Mam już stronę WWW — automat sam pobierze z niej teksty, cennik i zdjęcia.</span>
+                </div>
+              </label>
+            </div>
+          </div>
+
+          <!-- Pole na adres obecnej strony (pokazywane przy redesignie) -->
+          <div id="ord-existing-wrap" style="display:none; margin-bottom:1.5rem; background:rgba(16,185,129,0.08); border:1px solid rgba(16,185,129,0.35); border-radius:14px; padding:1rem 1.15rem;">
+            <label for="ord-existing-url" style="display:block; font-size:0.78rem; font-weight:800; text-transform:uppercase; letter-spacing:0.06em; color:var(--emerald); margin-bottom:0.4rem;">Adres Twojej obecnej strony do odświeżenia *</label>
+            <input type="text" id="ord-existing-url" name="existing_site_url" placeholder="np. https://stara-strona-firmy.pl" class="order-input">
+            <span style="font-size:0.76rem; color:var(--text-muted); display:block; margin-top:0.35rem;">Nasz automat odwiedzi tę stronę, pobierze z niej teksty, nagłówki, ofertę, kontakt oraz zdjęcia i zbuduje z nich nowoczesną witrynę.</span>
+          </div>
+
+          <!-- Krok 2: Sposób wdrożenia / domeny -->
+          <div class="order-choice-grid" style="margin-bottom: 1.5rem;">
+            <div>
+              <label for="ord-delivery" class="order-step-label">2. Sposób uruchomienia strony *</label>
+              <select id="ord-delivery" name="delivery_mode" class="order-select">
+                <option value="new_pl">🌐 Nowa domena .pl (rejestracja w cenie 399 zł)</option>
+                <option value="own_domain_dns">🔗 Mam własną domenę (przepięcie DNS + darmowy SSL)</option>
+                <option value="zip_code">📦 Tylko paczka kodu .ZIP (na własny serwer)</option>
+              </select>
+            </div>
+            <div id="ord-domain-box">
+              <label for="ord-domain" id="ord-domain-label" class="order-step-label">Wymarzona domena (.pl)</label>
+              <input type="text" id="ord-domain" name="domain_preferred" placeholder="np. twoja-firma.pl (opcjonalnie)" class="order-input">
+              <span id="ord-domain-hint" style="font-size:0.73rem; color:var(--text-muted); display:block; margin-top:0.25rem;">Możesz też wybrać domenę później ze swoim opiekunem AI.</span>
+            </div>
+          </div>
+
+          <!-- Krok 3: Wybór pakietu -->
+          <div style="margin-bottom: 1.5rem;">
+            <label class="order-step-label">3. Wybierz pakiet *</label>
+            <div class="order-choice-grid">
+              <label class="order-choice-card active" id="pkg-standard-card">
+                <input type="radio" name="package" value="standard" checked style="margin-top:0.2rem; accent-color:var(--emerald);">
+                <div>
+                  <strong style="display:block; color:var(--text-main); font-size:0.95rem;">Strona „Pod Klucz” — 399 zł</strong>
+                  <span style="font-size:0.8rem; color:var(--text-muted); line-height:1.4; display:block; margin-top:0.2rem;">Jednorazowo. Stworzenie strony + 48h gwarancji na poprawki + domena .pl / DNS / .ZIP.</span>
+                </div>
+              </label>
+
+              <label class="order-choice-card" id="pkg-cms-card">
+                <input type="radio" name="package" value="with_cms" style="margin-top:0.2rem; accent-color:var(--emerald);">
+                <div>
+                  <strong style="display:block; color:var(--text-main); font-size:0.95rem;">Strona + WhatsApp CMS 24/7 — 399 zł <span style="color:var(--emerald);">+ 29 zł/mies.</span></strong>
+                  <span style="font-size:0.8rem; color:var(--text-muted); line-height:1.4; display:block; margin-top:0.2rem;">Nielimitowane aktualizacje strony, cennika, zdjęć i bloga prosto z WhatsAppa przez cały rok.</span>
+                </div>
+              </label>
+            </div>
+          </div>
+
+          <!-- Krok 4: Dane kontaktowe -->
+          <div class="order-choice-grid" style="margin-bottom: 1.15rem;">
+            <div>
+              <label for="ord-name" class="order-step-label">4. Imię / Nazwa firmy *</label>
+              <input type="text" id="ord-name" name="name" required placeholder="np. Jan Kowalski / Auto-Serwis" class="order-input">
+            </div>
+            <div>
+              <label for="ord-phone" class="order-step-label">Telefon (WhatsApp) *</label>
+              <input type="tel" id="ord-phone" name="phone" required placeholder="np. 600 100 200 (bez +48 też działa)" class="order-input">
+              <span style="font-size:0.73rem; color:var(--text-muted); display:block; margin-top:0.25rem;">Wpisz sam numer 9-cyfrowy lub z kierunkowym — automat sam dopasuje format WhatsApp (+48).</span>
+            </div>
+          </div>
+
+          <div style="margin-bottom: 1.4rem;">
+            <label for="ord-email" class="order-step-label">Adres E-mail (do faktury i powiadomień) *</label>
+            <input type="email" id="ord-email" name="email" required placeholder="kontakt@twojafirma.pl" class="order-input">
+          </div>
+
+          <div id="order-error" style="display:none; color:#fca5a5; background:rgba(239,68,68,0.14); border:1px solid rgba(239,68,68,0.4); padding:0.75rem 1rem; border-radius:10px; font-size:0.86rem; font-weight:600; margin-bottom:1rem;"></div>
+
+          <button type="submit" id="ord-submit" class="order-submit-btn">
+            🔒 Przejdź do płatności (399 zł · BLIK / Karta) →
+          </button>
+
+          <p style="text-align:center; font-size:0.78rem; color:var(--text-muted); margin:0.85rem 0 0;">
+            Bezpieczna płatność obsługiwana przez <strong>Stripe</strong> (BLIK, Karta, Apple Pay, Google Pay). Po opłaceniu nasz automat wyśle do Ciebie powitanie na WhatsAppie oraz e-mailu w ciągu kilkunastu sekund.
+          </p>
+        </form>
+      </div>
     </div>
-  </div>
+  </section>
 
   <footer>
     <div class="container">
@@ -1698,6 +2006,229 @@ Styl: ciemny granat z żółtymi/pomarańczowymi akcentami. <strong>START</stron
           if (timeEl) timeEl.textContent = btn.getAttribute('data-time');
         });
       });
+
+      // Order form logic
+      var orderForm = document.getElementById('order-form');
+      var errEl = document.getElementById('order-error');
+      var submitBtn = document.getElementById('ord-submit');
+      var stdCard = document.getElementById('pkg-standard-card');
+      var cmsCard = document.getElementById('pkg-cms-card');
+      var goalNewCard = document.getElementById('goal-new-card');
+      var goalRedesignCard = document.getElementById('goal-redesign-card');
+      var existingWrap = document.getElementById('ord-existing-wrap');
+      var existingUrlInput = document.getElementById('ord-existing-url');
+      var deliverySelect = document.getElementById('ord-delivery');
+      var domainBox = document.getElementById('ord-domain-box');
+      var domainLabel = document.getElementById('ord-domain-label');
+      var domainInput = document.getElementById('ord-domain');
+      var domainHint = document.getElementById('ord-domain-hint');
+      var phoneInput = document.getElementById('ord-phone');
+      var bannerEl = document.getElementById('order-banner');
+
+      var apiBase = window.location.hostname.endsWith('github.io')
+        ? 'https://warsztatcyfrowy.pl'
+        : '';
+
+      function normalizePolishPhone(raw) {
+        var trimmed = (raw || '').trim();
+        if (!trimmed) return '';
+        var digits = trimmed.replace(/\D/g, '');
+        if (digits.indexOf('00') === 0 && digits.length > 9) {
+          digits = digits.slice(2);
+        }
+        if (digits.length === 9) {
+          return '+48 ' + digits.slice(0, 3) + ' ' + digits.slice(3, 6) + ' ' + digits.slice(6, 9);
+        }
+        if (digits.length === 11 && digits.indexOf('48') === 0) {
+          var nat = digits.slice(2);
+          return '+48 ' + nat.slice(0, 3) + ' ' + nat.slice(3, 6) + ' ' + nat.slice(6, 9);
+        }
+        if (digits.length >= 9 && trimmed.indexOf('+') === 0) {
+          return '+' + digits;
+        }
+        return trimmed;
+      }
+
+      if (phoneInput) {
+        phoneInput.addEventListener('blur', function () {
+          var formatted = normalizePolishPhone(phoneInput.value);
+          if (formatted) phoneInput.value = formatted;
+        });
+      }
+
+      function updatePackageCards() {
+        var selected = document.querySelector('input[name="package"]:checked');
+        if (!selected) return;
+        if (selected.value === 'with_cms') {
+          if (cmsCard) cmsCard.classList.add('active');
+          if (stdCard) stdCard.classList.remove('active');
+          if (submitBtn) submitBtn.textContent = '🔒 Przejdź do płatności (399 zł + 29 zł/mies. · BLIK / Karta) →';
+        } else {
+          if (stdCard) stdCard.classList.add('active');
+          if (cmsCard) cmsCard.classList.remove('active');
+          if (submitBtn) submitBtn.textContent = '🔒 Przejdź do płatności (399 zł · BLIK / Karta) →';
+        }
+      }
+
+      function updateDeliveryUI() {
+        if (!deliverySelect) return;
+        var mode = deliverySelect.value;
+        if (mode === 'zip_code') {
+          if (domainBox) domainBox.style.opacity = '0.45';
+          if (domainLabel) domainLabel.textContent = 'Domena (niewymagana przy .ZIP)';
+          if (domainInput) {
+            domainInput.placeholder = 'Otrzymasz gotową paczkę kodu .ZIP';
+            domainInput.disabled = true;
+            domainInput.value = '';
+          }
+          if (domainHint) domainHint.textContent = 'Po akceptacji projektu wyślemy Ci kompletną paczkę .zip na WhatsAppie i e-mailu.';
+        } else if (mode === 'own_domain_dns') {
+          if (domainBox) domainBox.style.opacity = '1';
+          if (domainLabel) domainLabel.textContent = 'Twoja obecna domena (do przepięcia DNS)';
+          if (domainInput) {
+            domainInput.disabled = false;
+            domainInput.placeholder = 'np. moja-firma.pl';
+          }
+          if (domainHint) domainHint.textContent = 'Podamy Ci rekordy DNS (A / CNAME) i automatycznie wygenerujemy darmowy certyfikat SSL.';
+        } else {
+          if (domainBox) domainBox.style.opacity = '1';
+          if (domainLabel) domainLabel.textContent = 'Wymarzona domena (.pl)';
+          if (domainInput) {
+            domainInput.disabled = false;
+            domainInput.placeholder = 'np. twoja-firma.pl (opcjonalnie)';
+          }
+          if (domainHint) domainHint.textContent = 'Możesz też wybrać domenę później ze swoim opiekunem AI.';
+        }
+      }
+
+      function updateGoalCards() {
+        var selected = document.querySelector('input[name="order_goal"]:checked');
+        if (!selected) return;
+        if (selected.value === 'redesign') {
+          if (goalRedesignCard) goalRedesignCard.classList.add('active');
+          if (goalNewCard) goalNewCard.classList.remove('active');
+          if (existingWrap) existingWrap.style.display = 'block';
+          if (existingUrlInput) existingUrlInput.required = true;
+          if (deliverySelect && deliverySelect.value === 'new_pl') {
+            deliverySelect.value = 'own_domain_dns';
+            updateDeliveryUI();
+          }
+        } else {
+          if (goalNewCard) goalNewCard.classList.add('active');
+          if (goalRedesignCard) goalRedesignCard.classList.remove('active');
+          if (existingWrap) existingWrap.style.display = 'none';
+          if (existingUrlInput) existingUrlInput.required = false;
+        }
+      }
+
+      document.querySelectorAll('input[name="package"]').forEach(function (radio) {
+        radio.addEventListener('change', updatePackageCards);
+      });
+      document.querySelectorAll('input[name="order_goal"]').forEach(function (radio) {
+        radio.addEventListener('change', updateGoalCards);
+      });
+      if (deliverySelect) {
+        deliverySelect.addEventListener('change', updateDeliveryUI);
+      }
+
+      // Click handlers on CTA buttons with data-select-goal / data-select-pkg
+      document.querySelectorAll('[data-select-goal]').forEach(function (btn) {
+        btn.addEventListener('click', function () {
+          var goalVal = btn.getAttribute('data-select-goal');
+          var r = document.querySelector('input[name="order_goal"][value="' + goalVal + '"]');
+          if (r) {
+            r.checked = true;
+            updateGoalCards();
+          }
+        });
+      });
+
+      document.querySelectorAll('[data-select-pkg]').forEach(function (btn) {
+        btn.addEventListener('click', function () {
+          var pkgVal = btn.getAttribute('data-select-pkg');
+          var r = document.querySelector('input[name="package"][value="' + pkgVal + '"]');
+          if (r) {
+            r.checked = true;
+            updatePackageCards();
+          }
+        });
+      });
+
+      // Handle URL query params (?goal=redesign, ?pkg=with_cms, ?order=success&session_id=...)
+      var params = new URLSearchParams(window.location.search);
+      var urlGoal = params.get('goal');
+      if (urlGoal === 'redesign' || urlGoal === 'new_site') {
+        var gr = document.querySelector('input[name="order_goal"][value="' + urlGoal + '"]');
+        if (gr) { gr.checked = true; updateGoalCards(); }
+      }
+      var urlPkg = params.get('pkg');
+      if (urlPkg === 'with_cms' || urlPkg === 'standard') {
+        var pr = document.querySelector('input[name="package"][value="' + urlPkg + '"]');
+        if (pr) { pr.checked = true; updatePackageCards(); }
+      }
+
+      if (params.get('order') === 'success' && bannerEl) {
+        var sid = params.get('session_id') || '';
+        bannerEl.hidden = false;
+        bannerEl.innerHTML = '🎉 <strong>Płatność przyjęta!</strong> Twój dedykowany opiekun AI właśnie wysyła powitanie na Twój <strong>WhatsApp</strong> oraz <strong>E-mail</strong>. Odpisz na wiadomość, aby rozpocząć budowę strony!';
+        if (sid) {
+          fetch(apiBase + '/api/order-status/' + encodeURIComponent(sid))
+            .then(function (r) { return r.ok ? r.json() : null; })
+            .then(function (info) {
+              if (info && info.order_id) {
+                bannerEl.innerHTML = '🎉 <strong>Zamówienie #' + info.order_id + ' opłacone!</strong> Sprawdź swój <strong>WhatsApp</strong> (' + (info.phone || '') + ') lub <strong>E-mail</strong> (' + (info.email || '') + ') — nasz automat już tam na Ciebie czeka!';
+              }
+            })
+            .catch(function () {});
+        }
+      }
+
+      if (orderForm) {
+        orderForm.addEventListener('submit', async function (e) {
+          e.preventDefault();
+          errEl.style.display = 'none';
+          var origText = submitBtn.textContent;
+          submitBtn.disabled = true;
+          submitBtn.textContent = '⏳ Przekierowanie do bezpiecznej płatności Stripe...';
+
+          var fd = new FormData(orderForm);
+          var rawPhone = (fd.get('phone') || '').toString();
+          var normalizedPhone = normalizePolishPhone(rawPhone);
+          if (phoneInput && normalizedPhone) {
+            phoneInput.value = normalizedPhone;
+          }
+
+          var payload = {
+            name: (fd.get('name') || '').toString().trim(),
+            phone: normalizedPhone || rawPhone.trim(),
+            email: (fd.get('email') || '').toString().trim(),
+            domain_preferred: (fd.get('domain_preferred') || '').toString().trim(),
+            package: (fd.get('package') || 'standard').toString(),
+            order_goal: (fd.get('order_goal') || 'new_site').toString(),
+            existing_site_url: (fd.get('existing_site_url') || '').toString().trim(),
+            delivery_mode: (fd.get('delivery_mode') || 'new_pl').toString(),
+            return_path: window.location.pathname && window.location.pathname.indexOf('/oferta') === 0 ? '/oferta/' : '/'
+          };
+
+          try {
+            var res = await fetch(apiBase + '/api/checkout', {
+              method: 'POST',
+              headers: { 'Content-Type': 'application/json' },
+              body: JSON.stringify(payload)
+            });
+            var data = await res.json();
+            if (!res.ok || !data.checkout_url) {
+              throw new Error(data.detail || 'Nie udało się utworzyć sesji płatności. Sprawdź poprawność danych.');
+            }
+            window.location.href = data.checkout_url;
+          } catch (err) {
+            errEl.textContent = err.message || 'Wystąpił błąd połączenia. Spróbuj ponownie.';
+            errEl.style.display = 'block';
+            submitBtn.disabled = false;
+            submitBtn.textContent = origText;
+          }
+        });
+      }
     })();
   </script>
 </body>
