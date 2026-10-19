@@ -3,16 +3,23 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Gotowa Strona-Wizytówka .pl w&nbsp;5&nbsp;Minut z&nbsp;WhatsAppa&nbsp;— 399&nbsp;zł | Warsztat Cyfrowy</title>
+  <title>Gotowa Strona-Wizytówka .pl w&nbsp;Kilka Minut z&nbsp;WhatsAppa&nbsp;— 399&nbsp;zł | Warsztat Cyfrowy</title>
   <meta name="description" content="Zamów profesjonalną stronę internetową z domeną .pl i certyfikatem SSL za 399 zł. Wyślij opis firmy i zdjęcia na WhatsApp lub e-mail, napisz START i odbierz gotową stronę!" />
   <meta name="robots" content="index, follow" />
   <link rel="canonical" href="https://warsztatcyfrowy.pl/oferta/" />
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='6' fill='%2310b981'/%3E%3Cpath d='M7 22L13 10L16 17L19 10L25 22' stroke='%23070b14' stroke-width='2.8' stroke-linecap='round' stroke-linejoin='round' fill='none'/%3E%3C/svg%3E" />
 
   <!-- Open Graph / Social / Ads Preview -->
   <meta property="og:type" content="website" />
-  <meta property="og:title" content="Strona Internetowa dla Firmy w 5 Minut przez WhatsApp — 399 zł" />
+  <meta property="og:locale" content="pl_PL" />
+  <meta property="og:title" content="Strona Internetowa dla Firmy w Kilka Minut przez WhatsApp — 399 zł" />
   <meta property="og:description" content="Bez agencji, bez kreatorów, bez czekania tygodniami. Wyślij zdjęcia i opis na WhatsAppie, dopracuj projekt bez limitu poprawek i odbierz stronę pod własną domeną .pl!" />
   <meta property="og:url" content="https://warsztatcyfrowy.pl/oferta/" />
+  <meta property="og:image" content="https://warsztatcyfrowy.pl/oferta/og-image.png" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:image" content="https://warsztatcyfrowy.pl/oferta/og-image.png" />
 
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -29,7 +36,7 @@
         "description": "Kompletna strona internetowa dla firmy generowana i edytowana przez WhatsApp lub e-mail, z domeną .pl i certyfikatem SSL w cenie.",
         "brand": {
           "@type": "Brand",
-          "name": "Warsztat Cyfrowy"
+          "name": "Warsztat Cyfrowy — Doradztwo Handlowe Zdzisław Krzemiński"
         },
         "offers": [
           {
@@ -38,7 +45,13 @@
             "price": "399.00",
             "priceCurrency": "PLN",
             "availability": "https://schema.org/InStock",
-            "url": "https://warsztatcyfrowy.pl/oferta/#zamow-strone"
+            "url": "https://warsztatcyfrowy.pl/oferta/#zamow-strone",
+            "seller": {
+              "@type": "Organization",
+              "name": "Doradztwo Handlowe Zdzisław Krzemiński",
+              "taxID": "1131818776",
+              "telephone": "+48 798 399 053"
+            }
           },
           {
             "@type": "Offer",
@@ -549,82 +562,6 @@
       border-radius: 6px;
     }
 
-    /* Interactive Live Simulator */
-    .sim-grid {
-      display: grid;
-      grid-template-columns: 0.95fr 1.05fr;
-      gap: 2rem;
-      align-items: stretch;
-      background: var(--bg-card);
-      border: 1px solid var(--border);
-      border-radius: 24px;
-      padding: 2rem;
-    }
-    .sim-buttons {
-      display: flex;
-      flex-direction: column;
-      gap: 0.85rem;
-    }
-    .sim-btn {
-      text-align: left;
-      background: rgba(7, 11, 20, 0.7);
-      border: 1px solid var(--border);
-      border-radius: 14px;
-      padding: 1rem 1.15rem;
-      color: var(--text-main);
-      cursor: pointer;
-      transition: all 0.2s;
-    }
-    .sim-btn:hover, .sim-btn.active {
-      border-color: var(--emerald);
-      background: rgba(16, 185, 129, 0.1);
-      box-shadow: 0 0 25px rgba(16, 185, 129, 0.14);
-    }
-    .sim-btn-label {
-      display: block;
-      font-size: 0.75rem;
-      color: var(--emerald);
-      font-weight: 700;
-      text-transform: uppercase;
-      margin-bottom: 0.25rem;
-    }
-    .sim-btn-text {
-      font-size: 0.92rem;
-      font-weight: 600;
-    }
-    .sim-screen {
-      background: #070b14;
-      border: 1px solid var(--border-accent);
-      border-radius: 18px;
-      padding: 1.5rem;
-      display: flex;
-      flex-direction: column;
-      justify-content: space-between;
-    }
-    .sim-browser-top {
-      display: flex;
-      flex-wrap: wrap;
-      align-items: center;
-      justify-content: space-between;
-      gap: 0.5rem;
-      padding-bottom: 0.9rem;
-      margin-bottom: 1.1rem;
-      border-bottom: 1px solid var(--border);
-    }
-    .dots {
-      display: flex;
-      gap: 6px;
-    }
-    .dots span {
-      width: 10px;
-      height: 10px;
-      border-radius: 50%;
-      background: #334155;
-    }
-    .dots span:nth-child(1) { background: #ef4444; }
-    .dots span:nth-child(2) { background: #f59e0b; }
-    .dots span:nth-child(3) { background: #10b981; }
-
     /* Pricing Cards */
     .pricing-grid {
       display: grid;
@@ -719,35 +656,6 @@
     code {
       overflow-wrap: anywhere;
       word-break: break-word;
-    }
-
-    /* Comparison Table */
-    .comp-table-wrap {
-      overflow-x: auto;
-      -webkit-overflow-scrolling: touch;
-      background: var(--bg-card);
-      border: 1px solid var(--border);
-      border-radius: 20px;
-      max-width: 100%;
-    }
-    table.comp-table {
-      width: 100%;
-      border-collapse: collapse;
-      text-align: left;
-    }
-    .comp-table th, .comp-table td {
-      padding: 1.1rem 1.25rem;
-      border-bottom: 1px solid var(--border);
-      font-size: 0.93rem;
-    }
-    .comp-table th {
-      background: rgba(7, 11, 20, 0.6);
-      font-weight: 800;
-    }
-    .comp-table td.highlight-col, .comp-table th.highlight-col {
-      background: rgba(16, 185, 129, 0.08);
-      color: #f8fafc;
-      font-weight: 700;
     }
 
     /* Portfolio / Examples & Prompt->Realizacja Showcase */
@@ -915,16 +823,6 @@
       font-size: 0.94rem;
     }
 
-    /* Bottom CTA */
-    .cta-banner {
-      background: linear-gradient(135deg, rgba(16, 185, 129, 0.16), rgba(6, 182, 212, 0.14));
-      border: 1px solid var(--border-accent);
-      border-radius: 28px;
-      padding: 3.25rem 2rem;
-      text-align: center;
-      margin-bottom: 4rem;
-    }
-
     footer {
       border-top: 1px solid var(--border);
       padding: 2.25rem 0;
@@ -934,7 +832,7 @@
     }
 
     @media (max-width: 960px) {
-      .hero-grid, .sim-grid, .pricing-grid, .examples-grid, .modes-grid, .prompt-showcase-card {
+      .hero-grid, .pricing-grid, .examples-grid, .modes-grid, .prompt-showcase-card {
         grid-template-columns: minmax(0, 1fr);
       }
       .steps-grid {
@@ -1026,6 +924,11 @@
       color: var(--text-main);
       box-shadow: 0 12px 32px rgba(16, 185, 129, 0.18);
     }
+    .order-banner.cancelled {
+      background: rgba(245, 158, 11, 0.12);
+      border-color: var(--amber);
+      box-shadow: 0 12px 32px rgba(245, 158, 11, 0.14);
+    }
     .order-banner-head {
       display: flex;
       justify-content: space-between;
@@ -1037,6 +940,9 @@
       color: #34d399;
       font-weight: 700;
       margin-bottom: 0.45rem;
+    }
+    .order-banner.cancelled .order-banner-head {
+      color: var(--amber);
     }
     .order-step-block {
       margin-bottom: 1.65rem;
@@ -1247,7 +1153,7 @@
         </div>
         <h1>
           Wyślij opis lub&nbsp;link do&nbsp;starej strony.<br />
-          <span class="gradient-text">Odbierz nowoczesną stronę w&nbsp;5&nbsp;minut!</span>
+          <span class="gradient-text">Odbierz nowoczesną stronę w&nbsp;kilka minut!</span>
         </h1>
         <p class="hero-lead">
           Płacisz <strong>399&nbsp;zł jednorazowo (BLIK / Karta)</strong>. Wyślij opis i&nbsp;zdjęcia na&nbsp;WhatsAppie <strong>albo&nbsp;podaj tylko adres swojej starej strony WWW</strong> — nasz automat sam pobierze z&nbsp;niej teksty i&nbsp;zdjęcia oraz&nbsp;zbuduje nową wersję! Gotową witrynę odbierzesz z&nbsp;domeną <strong>.pl</strong>, przepniesz <strong>DNS</strong> lub&nbsp;pobierzesz <strong>paczkę&nbsp;.zip</strong>.
@@ -1318,8 +1224,8 @@
           </div>
 
           <div class="msg msg-bot">
-            🎉 <strong>Gotowe w&nbsp;4&nbsp;sekundy!</strong> Dodaliśmy sekcję realizacji i&nbsp;opublikowaliśmy stronę pod&nbsp;<strong>https://klimapro24.pl</strong> (SSL aktywny).
-            <span class="msg-time">12:05</span>
+            🎉 <strong>Gotowe w&nbsp;niecałą minutę!</strong> Dodaliśmy sekcję realizacji i&nbsp;opublikowaliśmy stronę pod&nbsp;<strong>https://klimapro24.pl</strong> (SSL aktywny).
+            <span class="msg-time">12:06</span>
           </div>
         </div>
 
@@ -1462,7 +1368,7 @@
               Prowadź firmowego Bloga i&nbsp;Portfolio prosto z&nbsp;WhatsAppa
             </h3>
             <p style="font-size: 0.88rem; color: var(--text-muted); margin-bottom: 0.5rem;">
-              Z&nbsp;pakietem Opieki (29&nbsp;zł/mies.) wysyłasz zdjęcie lub&nbsp;krótki filmik <code>.mp4</code> i&nbsp;2&nbsp;zdania na&nbsp;WhatsAppie, a&nbsp;AI w&nbsp;4&nbsp;sekundy publikuje sformatowany wpis blogowy pod&nbsp;SEO lub&nbsp;nową realizację!
+              Z&nbsp;pakietem Opieki (29&nbsp;zł/mies.) wysyłasz zdjęcie lub&nbsp;krótki filmik <code>.mp4</code> i&nbsp;2&nbsp;zdania na&nbsp;WhatsAppie, a&nbsp;AI w&nbsp;ok.&nbsp;1&nbsp;minutę publikuje sformatowany wpis blogowy pod&nbsp;SEO lub&nbsp;nową realizację!
             </p>
           </div>
           <a href="#zamow-strone" data-select-pkg="with_cms" style="padding-top: 0.75rem; border-top: 1px solid var(--border); font-size: 0.84rem; color: #34d399; font-weight: 700; text-decoration: none; display: block;">
@@ -1558,7 +1464,7 @@ Styl strony: jasny, świeży (biel, chłodny błękit i&nbsp;grafit). <strong>ST
               <span class="price-num">399</span>
               <span class="price-curr">zł&nbsp;brutto (jednorazowo)</span>
             </div>
-            <p class="price-note">Brak obowiązkowego abonamentu (0&nbsp;zł/mies.). Płacisz raz i&nbsp;strona działa przez&nbsp;cały rok.</p>
+            <p class="price-note">Brak obowiązkowego abonamentu (0&nbsp;zł/mies. za&nbsp;hosting). Płacisz raz i&nbsp;strona działa przez&nbsp;cały rok.</p>
 
             <ul class="feature-list">
               <li><span class="check">✓</span> <span><strong>Nowa strona z&nbsp;opisu (własne zdjęcia lub&nbsp;generowanie grafik AI w&nbsp;cenie!) LUB&nbsp;odświeżenie Twojej starej witryny</strong></span></li>
@@ -1585,13 +1491,13 @@ Styl strony: jasny, świeży (biel, chłodny błękit i&nbsp;grafit). <strong>ST
               <span class="price-num">399</span>
               <span class="price-curr">zł + 29&nbsp;zł&nbsp;/&nbsp;mies.</span>
             </div>
-            <p class="price-note">Możesz anulować subskrypcję 29&nbsp;zł/mies. jednym kliknięciem w&nbsp;dowolnym momencie.</p>
+            <p class="price-note">Możesz anulować subskrypcję 29&nbsp;zł/mies. w&nbsp;dowolnym momencie bez&nbsp;okresu wypowiedzenia.</p>
 
             <ul class="feature-list">
               <li><span class="check">✓</span> <span><strong>Wszystko z&nbsp;pakietu „Pod&nbsp;Klucz”</strong> (nowa strona lub&nbsp;redesign + domena&nbsp;.pl / DNS / .ZIP)</span></li>
               <li><span class="check">✓</span> <span><strong>Blog, Aktualności i&nbsp;Portfolio przez&nbsp;WhatsApp</strong> (wysyłasz zdjęcie/wideo i&nbsp;2&nbsp;zdania, a&nbsp;AI tworzy wpis pod&nbsp;SEO!)</span></li>
               <li><span class="check">✓</span> <span><strong>Nielimitowane aktualizacje strony 24/7&nbsp;przez&nbsp;cały rok</strong> z&nbsp;WhatsAppa i&nbsp;E-maila</span></li>
-              <li><span class="check">✓</span> <span>Błyskawiczna zmiana cen, menu dnia, wolnych terminów lub&nbsp;telefonu w&nbsp;<strong>~4&nbsp;sekundy</strong></span></li>
+              <li><span class="check">✓</span> <span>Szybka zmiana cen, menu dnia, wolnych terminów lub&nbsp;telefonu w&nbsp;<strong>ok.&nbsp;1&nbsp;minutę</strong></span></li>
             </ul>
           </div>
 
@@ -1609,7 +1515,7 @@ Styl strony: jasny, świeży (biel, chłodny błękit i&nbsp;grafit). <strong>ST
   <section class="order-section" id="zamow-strone" style="padding-top: 2rem;">
     <div class="container">
       <div class="section-head" style="margin-bottom: 2rem;">
-        <span class="section-tag">Formularz zamówienia&nbsp;· Realizacja w&nbsp;24h</span>
+        <span class="section-tag">Formularz zamówienia&nbsp;· Pierwsza wersja w&nbsp;kilka minut (gwarancja 24h)</span>
         <h2>Zamów stronę WWW lub&nbsp;odświeżenie starej</h2>
         <p>Wybierz czego potrzebujesz i&nbsp;podaj kontakt. Zaraz po&nbsp;opłaceniu (BLIK / karta) nasz asystent odezwie się do&nbsp;Ciebie na&nbsp;WhatsAppie.</p>
       </div>
@@ -1624,7 +1530,7 @@ Styl strony: jasny, świeży (biel, chłodny błękit i&nbsp;grafit). <strong>ST
                 <input type="radio" name="order_goal" value="new_site" checked>
                 <span class="order-choice-body">
                   <strong>✨ Nowa strona od&nbsp;zera</strong>
-                  <span>Nie&nbsp;mam jeszcze strony&nbsp;— wyślę krótki opis firmy i&nbsp;zdjęcia na&nbsp;WhatsAppie lub&nbsp;e-mailu.</span>
+                  <span>Nie&nbsp;mam jeszcze strony&nbsp;— wyślę krótki opis firmy na&nbsp;WhatsAppie lub&nbsp;e-mailu (własne zdjęcia lub&nbsp;generowanie grafik AI w&nbsp;cenie).</span>
                 </span>
               </label>
 
@@ -1710,9 +1616,9 @@ Styl strony: jasny, świeży (biel, chłodny błękit i&nbsp;grafit). <strong>ST
 
           <div class="order-steps-hint">
             <strong style="color: var(--text-main);">Co&nbsp;stanie się po&nbsp;kliknięciu przycisku poniżej?</strong><br>
-            1.&nbsp;Opłacisz zamówienie wygodnie przez&nbsp;<strong>BLIK, kartę, Apple Pay lub&nbsp;Google Pay</strong>.<br>
+            1.&nbsp;Opłacisz zamówienie wygodnie przez&nbsp;<strong>BLIK, kartę, Apple Pay lub&nbsp;Google Pay</strong> (w&nbsp;oknie płatności możesz podać <strong>NIP firmy do&nbsp;faktury</strong>).<br>
             2.&nbsp;W&nbsp;ciągu kilkunastu sekund nasz asystent napisze do&nbsp;Ciebie powitanie na&nbsp;<strong>WhatsAppie</strong> (oraz&nbsp;e-mailu).<br>
-            3.&nbsp;Wyślesz w&nbsp;czacie opis/zdjęcia (lub&nbsp;potwierdzisz pobranie starej strony słowem <code>START</code>) i&nbsp;otrzymasz gotową stronę do&nbsp;akceptacji!
+            3.&nbsp;Wyślesz w&nbsp;czacie opis/zdjęcia (lub&nbsp;potwierdzisz pobranie starej strony słowem <code>START</code>) i&nbsp;w&nbsp;kilka minut otrzymasz gotową stronę do&nbsp;akceptacji!
           </div>
 
           <div id="order-error" class="order-error" style="display:none;"></div>
@@ -1722,7 +1628,10 @@ Styl strony: jasny, świeży (biel, chłodny błękit i&nbsp;grafit). <strong>ST
           </button>
 
           <p style="text-align:center; font-size:0.8rem; color:var(--text-muted); margin:0.85rem 0 0;">
-            🔒 Bezpieczna płatność online (Stripe): BLIK&nbsp;· Karta płatnicza&nbsp;· Apple Pay&nbsp;· Google Pay
+            🔒 Bezpieczna płatność online (Stripe): BLIK&nbsp;· Karta płatnicza&nbsp;· Apple Pay&nbsp;· Google Pay&nbsp;· Faktura z&nbsp;NIP
+          </p>
+          <p style="text-align:center; font-size:0.75rem; color:var(--text-muted); margin:0.45rem 0 0; line-height:1.45;">
+            Przechodząc do&nbsp;płatności, akceptujesz <a href="/regulamin.html" target="_blank" rel="noopener" style="color:#cbd5e1;text-decoration:underline;">Regulamin</a> i&nbsp;<a href="/polityka-prywatnosci.html" target="_blank" rel="noopener" style="color:#cbd5e1;text-decoration:underline;">Politykę Prywatności</a> (Doradztwo Handlowe Zdzisław Krzemiński, NIP&nbsp;1131818776) oraz&nbsp;wyrażasz zgodę na&nbsp;rozpoczęcie realizacji usługi przed upływem 14&nbsp;dni.
           </p>
         </form>
       </div>
@@ -1754,7 +1663,7 @@ Styl strony: jasny, świeży (biel, chłodny błękit i&nbsp;grafit). <strong>ST
             <span style="color: var(--emerald);">+</span>
           </summary>
           <p>
-            Tak! W&nbsp;pakiecie Opieki WhatsApp CMS (29&nbsp;zł/mies.) wysyłasz z&nbsp;telefonu zdjęcia lub&nbsp;krótki filmik <code>.mp4</code> (do&nbsp;25&nbsp;MB) z&nbsp;opisem w&nbsp;2&nbsp;zdaniach, a&nbsp;nasz automat w&nbsp;kilka sekund publikuje sformatowany wpis z&nbsp;nagłówkami SEO, galerią WebP lub&nbsp;odtwarzaczem wideo HTML5.
+            Tak! W&nbsp;pakiecie Opieki WhatsApp CMS (29&nbsp;zł/mies.) wysyłasz z&nbsp;telefonu zdjęcia lub&nbsp;krótki filmik <code>.mp4</code> (do&nbsp;25&nbsp;MB) z&nbsp;opisem w&nbsp;2&nbsp;zdaniach, a&nbsp;nasz automat w&nbsp;ok.&nbsp;1&nbsp;minutę publikuje sformatowany wpis z&nbsp;nagłówkami SEO, galerią WebP lub&nbsp;odtwarzaczem wideo HTML5.
           </p>
         </details>
 
@@ -1770,11 +1679,11 @@ Styl strony: jasny, świeży (biel, chłodny błękit i&nbsp;grafit). <strong>ST
 
         <details class="faq-item">
           <summary>
-            <span>Czy&nbsp;domena&nbsp;.pl, certyfikat SSL lub&nbsp;paczka kodu&nbsp;.ZIP są wliczone w&nbsp;399&nbsp;zł?</span>
+            <span>Czy&nbsp;domena&nbsp;.pl, certyfikat SSL lub&nbsp;paczka kodu&nbsp;.ZIP są wliczone w&nbsp;399&nbsp;zł? Co&nbsp;w&nbsp;kolejnych latach?</span>
             <span style="color: var(--emerald);">+</span>
           </summary>
           <p>
-            Tak&nbsp;— w&nbsp;cenie 399&nbsp;zł sam wybierasz sposób wdrożenia: rejestrujemy dla&nbsp;Ciebie nową domenę&nbsp;<code>.pl</code> na&nbsp;1.&nbsp;rok z&nbsp;darmowym hostingiem i&nbsp;SSL, pomagamy przepiąć DNS Twojej obecnej domeny albo&nbsp;generujemy kompletną paczkę kodu&nbsp;<code>.zip</code> na&nbsp;własny serwer.
+            Tak&nbsp;— w&nbsp;cenie 399&nbsp;zł sam wybierasz sposób wdrożenia: rejestrujemy dla&nbsp;Ciebie nową domenę&nbsp;<code>.pl</code> na&nbsp;1.&nbsp;rok z&nbsp;darmowym hostingiem (0&nbsp;zł/mies.) i&nbsp;SSL, pomagamy przepiąć DNS Twojej obecnej domeny albo&nbsp;generujemy kompletną paczkę kodu&nbsp;<code>.zip</code> na&nbsp;własny serwer. Sam hosting statyczny i&nbsp;SSL są bezpłatne bezterminowo, a&nbsp;w&nbsp;kolejnych latach jedynym kosztem utrzymania adresu jest standardowe odnowienie domeny <code>.pl</code> u&nbsp;rejestratora (lub&nbsp;bezpłatne przeniesienie domeny kodem AuthInfo do&nbsp;dowolnego operatora).
           </p>
         </details>
       </div>
@@ -1783,7 +1692,12 @@ Styl strony: jasny, świeży (biel, chłodny błękit i&nbsp;grafit). <strong>ST
 
   <footer>
     <div class="container">
-      <p>© <span id="current-year"></span> <a href="https://warsztatcyfrowy.pl" style="color: var(--emerald); text-decoration: none; font-weight: 600;">Warsztat Cyfrowy</a> · Automatyczne Strony-Wizytówki WWW z&nbsp;obsługą przez&nbsp;WhatsApp i&nbsp;E-mail.</p>
+      <p>© <span id="current-year"></span> <a href="https://warsztatcyfrowy.pl" style="color: var(--emerald); text-decoration: none; font-weight: 600;">Warsztat Cyfrowy</a> · Doradztwo Handlowe Zdzisław Krzemiński, Giławy 75, 11-030 Purda · NIP: 1131818776 · Tel.&nbsp;<a href="tel:+48798399053" style="color:inherit;">+48&nbsp;798&nbsp;399&nbsp;053</a></p>
+      <p style="margin-top: 0.45rem; font-size: 0.8rem;">
+        <a href="/regulamin.html" style="color: #cbd5e1; text-decoration: underline;">Regulamin świadczenia usług</a> ·
+        <a href="/polityka-prywatnosci.html" style="color: #cbd5e1; text-decoration: underline;">Polityka Prywatności i RODO</a> ·
+        <a href="https://warsztatcyfrowy.pl" style="color: #cbd5e1; text-decoration: underline;">Strona główna</a>
+      </p>
     </div>
   </footer>
 
@@ -1944,6 +1858,7 @@ Styl strony: jasny, świeży (biel, chłodny błękit i&nbsp;grafit). <strong>ST
       if (params.get('order') === 'success' && bannerEl) {
         var sid = params.get('session_id') || params.get('order_id') || '';
         bannerEl.hidden = false;
+        bannerEl.classList.remove('cancelled');
         bannerEl.innerHTML = '🎉 <strong>Płatność przyjęta!</strong> Twój dedykowany opiekun AI właśnie wysyła powitanie na&nbsp;Twój <strong>WhatsApp</strong> oraz&nbsp;<strong>E-mail</strong>. Odpisz na&nbsp;wiadomość, aby rozpocząć budowę strony!';
         if (sid) {
           fetch(apiBase + '/api/orders/' + encodeURIComponent(sid))
@@ -1967,6 +1882,12 @@ Styl strony: jasny, świeży (biel, chłodny błękit i&nbsp;grafit). <strong>ST
             })
             .catch(function () {});
         }
+      } else if (params.get('order') === 'cancelled' && bannerEl) {
+        bannerEl.hidden = false;
+        bannerEl.classList.add('cancelled');
+        bannerEl.innerHTML =
+          '<div class="order-banner-head"><span>⚠️ Płatność została przerwana</span><span>Nie pobrano żadnych środków</span></div>' +
+          '<div>Zamknąłeś okno płatności przed zakończeniem transakcji. Możesz w każdej chwili przewinąć do <a href="#zamow-strone" style="color:#f59e0b;font-weight:700;text-decoration:underline;">formularza zamówienia</a> i dokończyć płatność (BLIK / karta) lub zadzwonić pod <a href="tel:+48798399053" style="color:#f59e0b;font-weight:700;">+48 798 399 053</a>.</div>';
       }
 
       if (orderForm) {
